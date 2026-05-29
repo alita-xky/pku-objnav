@@ -1,0 +1,3 @@
+[DONE] scene=FloorPlan205, target=remote control, success=False, actions=607, goals=50, anchors=50, contexts=85
+       save_dir=outputs/batch_spub_20260529_165941/FloorPlan205_remote_control
+       log=outputs/batch_spub_20260529_165941/FloorPlan205_remote_control/run.log

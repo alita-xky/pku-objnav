@@ -1,0 +1,302 @@
+
+=== Scene ===
+FloorPlan203
+
+=== Target Query ===
+plant
+
+=== Resolved Target Prompt ===
+house plant
+
+=== Debug Force Search ===
+False
+
+=== Contexts From Semantic Prior ===
+window               score=0.748
+drawer               score=0.711
+side table           score=0.689
+painting             score=0.648
+laptop               score=0.642
+tv                   score=0.632
+pillow               score=0.629
+box                  score=0.617
+
+=== YOLO Classes ===
+['arm chair', 'book', 'box', 'chair', 'coffee table', 'couch', 'desk', 'desk lamp', 'dining table', 'drawer', 'floor lamp', 'house plant', 'lamp', 'laptop', 'monitor', 'newspaper', 'painting', 'pen', 'pencil', 'pillow', 'plant', 'remote control', 'side table', 'sofa', 'table', 'television', 'tv', 'tv stand', 'window']
+CloudRendering failed, trying normal rendering.
+Reason: Exception('The following builds were found, but had missing dependencies. Only one valid platform is required to run AI2-THOR.\nPlatform CloudRendering failed validation with the following errors: Vulkan API driver missing.\n  CloudRendering requires libvulkan1. Please install by running: sudo apt-get -y install libvulkan1')
+
+=== Initial Pose ===
+{'position': {'x': -3.0, 'y': 0.9070531129837036, 'z': 2.75}, 'rotation': {'x': -0.0, 'y': 90.0, 'z': 0.0}, 'camera_horizon': -0.0}
+
+Number of reachable positions: 593
+
+========== Initial YOLO Observation ==========
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.927
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.816
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.777
+[Context detected] label=television, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.603
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.492
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.422
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.359
+[Context detected] label=television, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.311
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.276
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.231
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.196
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 0:
+YOLO detections: [('laptop', 0.927, [283.6, 327.0, 337.0, 374.3]), ('sofa', 0.879, [0.0, 319.7, 133.2, 478.4]), ('coffee table', 0.874, [77.1, 362.7, 181.4, 428.6]), ('tv', 0.816, [277.4, 194.1, 396.8, 266.1]), ('pillow', 0.777, [0.0, 328.8, 70.0, 376.5]), ('couch', 0.765, [0.0, 317.3, 133.1, 478.1]), ('sofa', 0.757, [35.5, 390.8, 640.0, 479.9]), ('television', 0.603, [277.8, 194.0, 396.5, 264.4]), ('pillow', 0.492, [3.3, 391.5, 170.3, 480.0]), ('book', 0.434, [108.7, 369.6, 154.7, 388.4]), ('side table', 0.422, [260.6, 352.6, 417.3, 448.6]), ('desk', 0.393, [261.0, 352.6, 417.1, 448.1]), ('sofa', 0.387, [0.0, 390.8, 466.9, 480.0]), ('pillow', 0.359, [528.4, 390.6, 640.0, 479.9]), ('tv stand', 0.326, [262.2, 353.2, 416.4, 448.3]), ('television', 0.311, [296.7, 327.1, 336.9, 373.2]), ('pillow', 0.276, [0.0, 312.7, 44.4, 365.2]), ('sofa', 0.265, [243.6, 390.7, 640.0, 480.0]), ('pillow', 0.231, [0.0, 313.4, 45.7, 346.3]), ('window', 0.196, [72.7, 165.7, 259.8, 289.8]), ('couch', 0.191, [1.0, 397.1, 593.8, 479.9]), ('painting', 0.18, [489.5, 177.6, 599.6, 253.8])]
+Target status: not_detected
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.261
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('lamp', 0.929, [447.9, 111.8, 539.8, 218.3]), ('chair', 0.75, [344.8, 312.0, 411.4, 467.8]), ('chair', 0.748, [435.0, 329.2, 523.8, 480.0]), ('chair', 0.736, [536.7, 328.4, 640.0, 480.0]), ('dining table', 0.644, [382.4, 333.4, 633.1, 479.1]), ('tv stand', 0.52, [0.0, 345.5, 82.4, 480.0]), ('chair', 0.399, [542.2, 305.3, 631.6, 459.4]), ('side table', 0.261, [473.2, 299.2, 510.6, 334.1]), ('book', 0.261, [450.5, 351.7, 494.7, 363.8]), ('book', 0.199, [392.2, 333.8, 426.0, 344.0]), ('chair', 0.199, [524.8, 301.3, 571.6, 418.8]), ('chair', 0.186, [458.3, 303.6, 525.1, 432.6]), ('floor lamp', 0.185, [400.9, 299.7, 438.5, 335.3]), ('arm chair', 0.175, [431.3, 308.6, 463.3, 334.2]), ('arm chair', 0.168, [531.7, 303.0, 569.8, 335.0]), ('chair', 0.128, [541.4, 341.7, 622.3, 445.8]), ('chair', 0.125, [473.8, 300.5, 512.0, 332.5])]
+Target status: not_detected
+[Context detected] label=painting, matched_context=painting, raw_prior=0.648, anchor=0.70, effective_prior=0.454, score=0.262
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: [('painting', 0.262, [0.0, 159.7, 50.1, 278.8]), ('desk', 0.175, [0.4, 428.3, 368.3, 480.0])]
+Target status: not_detected
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('chair', 0.183, [0.0, 271.1, 80.9, 480.0]), ('side table', 0.178, [0.0, 269.2, 80.8, 480.0])]
+Target status: not_detected
+Initial observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.32088580646147535, 'score': 0.9267078042030334, 'position': {'x': 0.5151784420013428, 'y': 0.9070531129837036, 'z': 2.8134215381168453}, 'count': 1}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.3160715827005846, 'score': 0.8164669871330261, 'position': {'x': 1.4598455429077148, 'y': 0.9070531129837036, 'z': 2.6212553487629044}, 'count': 2}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.3145028277380711, 'score': 0.7767921686172485, 'position': {'x': 0.4415569305419922, 'y': 0.9070531129837036, 'z': 4.576225569006987}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.3145028277380711, 'score': 0.49179866909980774, 'position': {'x': -1.0539419651031494, 'y': 0.9070531129837036, 'z': 3.571601151536504}, 'count': 1}
+{'label': 'side table', 'matched_context': 'side table', 'prior_weight': 0.6885746853542192, 'score': 0.4217360317707062, 'position': {'x': 0.0626225471496582, 'y': 0.9070531129837036, 'z': 2.650538415198702}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.3145028277380711, 'score': 0.3590618669986725, 'position': {'x': -0.9916446208953857, 'y': 0.9070531129837036, 'z': 1.7970157861486606}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.3160715827005846, 'score': 0.31062719225883484, 'position': {'x': 0.4896230697631836, 'y': 0.9070531129837036, 'z': 2.7751841852337265}, 'count': 1}
+{'label': 'window', 'matched_context': 'window', 'prior_weight': 0.7480816372394444, 'score': 0.19609153270721436, 'position': {'x': 16.989999771118164, 'y': 0.9070531129837036, 'z': 8.340284128400382}, 'count': 1}
+{'label': 'side table', 'matched_context': 'side table', 'prior_weight': 0.6885746853542192, 'score': 0.2611827552318573, 'position': {'x': -3.9751946227786967, 'y': 0.9070531129837036, 'z': -0.41086387634277344}, 'count': 1}
+{'label': 'painting', 'matched_context': 'painting', 'prior_weight': 0.4536159044209056, 'score': 0.2623792290687561, 'position': {'x': -6.496882915496826, 'y': 0.9070531129837036, 'z': 0.8888023240216396}, 'count': 1}
+
+Top belief nodes:
+  0: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.438, context=0.438, uncertainty=1.000, negative=0.0
+  1: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.432, context=0.432, uncertainty=1.000, negative=0.0
+  2: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.425, context=0.425, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.422, context=0.422, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.418, context=0.418, uncertainty=1.000, negative=0.0
+  5: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.417, context=0.417, uncertainty=1.000, negative=0.0
+  6: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.417, context=0.417, uncertainty=1.000, negative=0.0
+  7: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 3.25}, belief=0.414, context=0.414, uncertainty=1.000, negative=0.0
+  8: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.410, context=0.410, uncertainty=1.000, negative=0.0
+  9: pos={'x': 0.75, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.410, context=0.410, uncertainty=1.000, negative=0.0
+
+Top belief nodes:
+  0: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.438, context=0.438, uncertainty=1.000, negative=0.0
+  1: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.432, context=0.432, uncertainty=1.000, negative=0.0
+  2: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.425, context=0.425, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.422, context=0.422, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.418, context=0.418, uncertainty=1.000, negative=0.0
+
+========== Belief Goal 0 ==========
+Current position: {'x': -3.0, 'y': 0.9070531129837036, 'z': 2.75}
+Selected goal: {'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}
+Goal info: {'belief': 0.42154862760782785, 'uncertainty': 1.0, 'context_score': 0.42154862760782785, 'path_cost': 28, 'seen_count': 0.0, 'negative_count': 0.0, 'visit_count': 0.0, 'score': 3.4585835312939346}
+Observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.32088580646147535, 'score': 0.9267078042030334, 'position': {'x': 0.5151784420013428, 'y': 0.9070531129837036, 'z': 2.8134215381168453}, 'count': 1}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.3160715827005846, 'score': 0.8164669871330261, 'position': {'x': 1.4598455429077148, 'y': 0.9070531129837036, 'z': 2.6212553487629044}, 'count': 2}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.3145028277380711, 'score': 0.7767921686172485, 'position': {'x': 0.4415569305419922, 'y': 0.9070531129837036, 'z': 4.576225569006987}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.3145028277380711, 'score': 0.49179866909980774, 'position': {'x': -1.0539419651031494, 'y': 0.9070531129837036, 'z': 3.571601151536504}, 'count': 1}
+{'label': 'side table', 'matched_context': 'side table', 'prior_weight': 0.6885746853542192, 'score': 0.4217360317707062, 'position': {'x': 0.0626225471496582, 'y': 0.9070531129837036, 'z': 2.650538415198702}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.3145028277380711, 'score': 0.3590618669986725, 'position': {'x': -0.9916446208953857, 'y': 0.9070531129837036, 'z': 1.7970157861486606}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.3160715827005846, 'score': 0.31062719225883484, 'position': {'x': 0.4896230697631836, 'y': 0.9070531129837036, 'z': 2.7751841852337265}, 'count': 1}
+{'label': 'window', 'matched_context': 'window', 'prior_weight': 0.7480816372394444, 'score': 0.19609153270721436, 'position': {'x': 16.989999771118164, 'y': 0.9070531129837036, 'z': 8.340284128400382}, 'count': 1}
+{'label': 'side table', 'matched_context': 'side table', 'prior_weight': 0.6885746853542192, 'score': 0.2611827552318573, 'position': {'x': -3.9751946227786967, 'y': 0.9070531129837036, 'z': -0.41086387634277344}, 'count': 1}
+{'label': 'painting', 'matched_context': 'painting', 'prior_weight': 0.4536159044209056, 'score': 0.2623792290687561, 'position': {'x': -6.496882915496826, 'y': 0.9070531129837036, 'z': 0.8888023240216396}, 'count': 1}
+Planned actions: ['MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of actions: 28
+Goal 0, action 0: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.925
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.850
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.785
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.452
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.437
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.279
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.253
+[Context detected] label=painting, matched_context=painting, raw_prior=0.648, anchor=0.70, effective_prior=0.454, score=0.206
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 1: RotateLeft, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 2: MoveAhead, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 3: MoveAhead, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 4: MoveAhead, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 5: MoveAhead, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 6: MoveAhead, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 7: RotateRight, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.932
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.841
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.698
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.459
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.214
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 8: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.940
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.832
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.827
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.628
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.181
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 9: RotateLeft, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 10: MoveAhead, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 11: RotateRight, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.932
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.805
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.776
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.621
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 12: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.945
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.828
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.825
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.662
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.280
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.230
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 13: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.952
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.875
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.840
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.652
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 14: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.893
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.855
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.835
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.486
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.430
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.223
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.207
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 15: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.917
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.839
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.784
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.699
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.292
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.271
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.204
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 16: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.830
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.785
+[Context detected] label=television, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.756
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.733
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.677
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.252
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.228
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 17: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.545
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.494
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.411
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.263
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.244
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.205
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 18: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.807
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.632
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.412
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.355
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 19: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.559
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.196
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.192
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 20: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.863
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.271
+[Context detected] label=window, matched_context=window, raw_prior=0.748, anchor=1.00, effective_prior=0.748, score=0.216
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 21: RotateRight, success=True
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.853
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.533
+[Context detected] label=television, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.482
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.446
+[Context detected] label=television, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.191
+[Target check] target_query=plant, target_prompt=house plant, status=valid, det={'label': 'house plant', 'score': 0.317749947309494, 'box': [349.6124572753906, 255.6826171875, 398.7329406738281, 313.96002197265625]}
+Move-time YOLO target status: valid
+Goal 0, action 22: MoveAhead, success=True
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.837
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.591
+[Context detected] label=box, matched_context=box, raw_prior=0.617, anchor=0.70, effective_prior=0.432, score=0.181
+[Target check] target_query=plant, target_prompt=house plant, status=valid, det={'label': 'house plant', 'score': 0.33605992794036865, 'box': [350.98516845703125, 255.73458862304688, 405.52703857421875, 318.2099914550781]}
+Move-time YOLO target status: valid
+
+YOLO found stable target while moving: plant
+Stable target position: {'x': -0.6586363346376678, 'y': 0.9070531129837036, 'z': 0.0024704933166503906, 'depth': 4.12252950668335}
+
+=== Approach Target ===
+Stable estimated target position: {'x': -0.6586363346376678, 'y': 0.9070531129837036, 'z': 0.0024704933166503906, 'depth': 4.12252950668335}
+Selected approach goal: {'x': -0.25, 'y': 0.9070531129837036, 'z': 0.75}
+Goal distance to estimated target: 0.852
+Approach actions: ['MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of approach actions: 13
+Approach action 0: MoveAhead, success=True
+Approach action 1: MoveAhead, success=True
+Approach action 2: MoveAhead, success=True
+Approach action 3: MoveAhead, success=True
+Approach action 4: MoveAhead, success=True
+Approach action 5: MoveAhead, success=True
+Approach action 6: MoveAhead, success=True
+Approach action 7: MoveAhead, success=True
+Approach action 8: MoveAhead, success=True
+Approach action 9: MoveAhead, success=True
+Approach action 10: MoveAhead, success=True
+Approach action 11: MoveAhead, success=True
+Approach action 12: MoveAhead, success=True
+Final verify 0, action=None, status=not_detected, det=None
+Final verify 1, action=LookDown, status=valid, det={'label': 'house plant', 'score': 0.2312573343515396, 'box': [517.3800659179688, 73.15791320800781, 640.0, 454.05364990234375]}
+
+=== Approach Finished ===
+Final agent position: {'x': -0.25, 'y': 0.9070531129837036, 'z': 0.75}
+Final distance to estimated target: 0.852
+Final YOLO status: valid
+Final YOLO target detection: {'label': 'house plant', 'score': 0.2312573343515396, 'box': [517.3800659179688, 73.15791320800781, 640.0, 454.05364990234375]}
+
+========== Summary ==========
+scene: FloorPlan203
+target: plant
+resolved_target: house plant
+success: True
+visited_belief_goals: 0
+visited_reachable_points: 2
+total_actions: 41
+num_context_objects: 23
+anchor_searches: 0
+searched_anchors: 0
+save_dir: outputs/batch_spub_20260529_165941/FloorPlan203_plant
+log_path: outputs/batch_spub_20260529_165941/FloorPlan203_plant/run.log

@@ -1,0 +1,3 @@
+[DONE] scene=FloorPlan203, target=plant, success=True, actions=41, goals=0, anchors=0, contexts=23
+       save_dir=outputs/batch_spub_20260529_165941/FloorPlan203_plant
+       log=outputs/batch_spub_20260529_165941/FloorPlan203_plant/run.log

@@ -1,0 +1,3 @@
+[DONE] scene=FloorPlan204, target=book, success=True, actions=608, goals=39, anchors=40, contexts=103
+       save_dir=outputs/batch_spub_20260529_165941/FloorPlan204_book
+       log=outputs/batch_spub_20260529_165941/FloorPlan204_book/run.log

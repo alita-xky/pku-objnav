@@ -1,0 +1,14 @@
+{
+  "scene": "FloorPlan205",
+  "target": "remote control",
+  "resolved_target": "remote control",
+  "success": false,
+  "visited_belief_goals": 50,
+  "visited_reachable_points": 1,
+  "total_actions": 607,
+  "num_context_objects": 85,
+  "anchor_searches": 50,
+  "searched_anchors": 50,
+  "save_dir": "outputs/batch_spub_20260529_165941/FloorPlan205_remote_control",
+  "log_path": "outputs/batch_spub_20260529_165941/FloorPlan205_remote_control/run.log"
+}

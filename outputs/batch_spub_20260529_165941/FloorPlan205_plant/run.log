@@ -1,0 +1,174 @@
+
+=== Scene ===
+FloorPlan205
+
+=== Target Query ===
+plant
+
+=== Resolved Target Prompt ===
+house plant
+
+=== Debug Force Search ===
+False
+
+=== Contexts From Semantic Prior ===
+window               score=0.748
+drawer               score=0.711
+side table           score=0.689
+painting             score=0.648
+laptop               score=0.642
+tv                   score=0.632
+pillow               score=0.629
+box                  score=0.617
+
+=== YOLO Classes ===
+['arm chair', 'book', 'box', 'chair', 'coffee table', 'couch', 'desk', 'desk lamp', 'dining table', 'drawer', 'floor lamp', 'house plant', 'lamp', 'laptop', 'monitor', 'newspaper', 'painting', 'pen', 'pencil', 'pillow', 'plant', 'remote control', 'side table', 'sofa', 'table', 'television', 'tv', 'tv stand', 'window']
+CloudRendering failed, trying normal rendering.
+Reason: Exception('The following builds were found, but had missing dependencies. Only one valid platform is required to run AI2-THOR.\nPlatform CloudRendering failed validation with the following errors: Vulkan API driver missing.\n  CloudRendering requires libvulkan1. Please install by running: sudo apt-get -y install libvulkan1')
+
+=== Initial Pose ===
+{'position': {'x': -3.0, 'y': 0.9011250734329224, 'z': 2.0}, 'rotation': {'x': -0.0, 'y': 90.0, 'z': 0.0}, 'camera_horizon': -0.0}
+
+Number of reachable positions: 297
+
+========== Initial YOLO Observation ==========
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.642, anchor=0.50, effective_prior=0.321, score=0.874
+[Target check] target_query=plant, target_prompt=house plant, status=too_small_or_low_conf, det={'label': 'house plant', 'score': 0.17578360438346863, 'box': [496.173583984375, 183.35205078125, 615.208984375, 419.10919189453125]}
+Observe rotation 0:
+YOLO detections: [('lamp', 0.923, [93.5, 303.7, 147.4, 390.0]), ('lamp', 0.908, [495.3, 0.3, 583.1, 234.2]), ('laptop', 0.874, [405.4, 396.0, 566.1, 479.9]), ('chair', 0.826, [408.8, 356.8, 498.4, 414.6]), ('desk', 0.764, [2.8, 374.5, 187.7, 480.0]), ('desk', 0.707, [353.0, 412.5, 640.0, 480.0]), ('lamp', 0.437, [496.3, 181.4, 615.0, 418.9]), ('arm chair', 0.391, [305.9, 403.4, 354.5, 480.0]), ('book', 0.384, [51.7, 374.9, 89.6, 385.9]), ('chair', 0.25, [304.8, 403.3, 377.9, 479.9]), ('chair', 0.186, [301.4, 405.4, 404.7, 479.9]), ('house plant', 0.176, [496.2, 183.4, 615.2, 419.1]), ('chair', 0.163, [304.2, 403.2, 453.5, 480.0]), ('lamp', 0.159, [124.0, 438.9, 150.7, 479.7]), ('house plant', 0.142, [0.2, 307.3, 61.2, 385.2])]
+Target status: too_small_or_low_conf
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('lamp', 0.162, [480.6, 341.8, 520.2, 359.3]), ('window', 0.152, [458.5, 128.5, 640.0, 480.0])]
+Target status: not_detected
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: []
+Target status: not_detected
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.797
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.748
+[Context detected] label=box, matched_context=box, raw_prior=0.617, anchor=0.70, effective_prior=0.432, score=0.426
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('sofa', 0.879, [0.0, 310.3, 226.1, 480.0]), ('tv', 0.797, [252.7, 245.7, 352.3, 306.4]), ('side table', 0.748, [377.7, 302.0, 428.0, 384.9]), ('chair', 0.681, [45.1, 401.8, 281.1, 480.0]), ('box', 0.426, [428.8, 354.9, 460.5, 383.6]), ('arm chair', 0.389, [47.2, 402.0, 279.4, 480.0]), ('sofa', 0.382, [314.5, 422.9, 511.6, 480.0]), ('tv stand', 0.316, [247.1, 313.5, 356.7, 382.7]), ('arm chair', 0.266, [230.2, 405.9, 279.4, 479.7]), ('sofa', 0.189, [495.1, 438.6, 640.0, 480.0]), ('arm chair', 0.161, [314.7, 438.0, 366.6, 480.0]), ('desk', 0.149, [583.0, 233.8, 640.0, 454.6]), ('side table', 0.131, [354.9, 424.5, 503.6, 479.9])]
+Target status: not_detected
+Initial observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.32088580646147535, 'score': 0.8741753697395325, 'position': {'x': -1.4939478635787964, 'y': 0.9011250734329224, 'z': 1.5516539529621727}, 'count': 1}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.3160715827005846, 'score': 0.7967763543128967, 'position': {'x': -3.1535870833740436, 'y': 0.9011250734329224, 'z': 6.729255676269531}, 'count': 1}
+{'label': 'side table', 'matched_context': 'side table', 'prior_weight': 0.6885746853542192, 'score': 0.7479832172393799, 'position': {'x': -2.260620723074987, 'y': 0.9011250734329224, 'z': 6.997629165649414}, 'count': 1}
+{'label': 'box', 'matched_context': 'box', 'prior_weight': 0.4316793291713396, 'score': 0.4255583584308624, 'position': {'x': -1.9574195952359537, 'y': 0.9011250734329224, 'z': 6.660134792327881}, 'count': 1}
+
+Top belief nodes:
+  0: pos={'x': -2.5, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.335, context=0.335, uncertainty=1.000, negative=0.0
+  1: pos={'x': -2.75, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.325, context=0.325, uncertainty=1.000, negative=0.0
+  2: pos={'x': -3.0, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.310, context=0.310, uncertainty=1.000, negative=0.0
+  3: pos={'x': -1.75, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.306, context=0.306, uncertainty=1.000, negative=0.0
+  4: pos={'x': -2.25, 'y': 0.9011250734329224, 'z': 6.0}, belief=0.297, context=0.297, uncertainty=1.000, negative=0.0
+  5: pos={'x': -2.5, 'y': 0.9011250734329224, 'z': 6.0}, belief=0.297, context=0.297, uncertainty=1.000, negative=0.0
+  6: pos={'x': -2.75, 'y': 0.9011250734329224, 'z': 6.0}, belief=0.290, context=0.290, uncertainty=1.000, negative=0.0
+  7: pos={'x': -2.0, 'y': 0.9011250734329224, 'z': 6.0}, belief=0.289, context=0.289, uncertainty=1.000, negative=0.0
+  8: pos={'x': -3.25, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.288, context=0.288, uncertainty=1.000, negative=0.0
+  9: pos={'x': -3.0, 'y': 0.9011250734329224, 'z': 6.0}, belief=0.277, context=0.277, uncertainty=1.000, negative=0.0
+
+Top belief nodes:
+  0: pos={'x': -2.5, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.335, context=0.335, uncertainty=1.000, negative=0.0
+  1: pos={'x': -2.75, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.325, context=0.325, uncertainty=1.000, negative=0.0
+  2: pos={'x': -3.0, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.310, context=0.310, uncertainty=1.000, negative=0.0
+  3: pos={'x': -1.75, 'y': 0.9011250734329224, 'z': 6.25}, belief=0.306, context=0.306, uncertainty=1.000, negative=0.0
+  4: pos={'x': -2.25, 'y': 0.9011250734329224, 'z': 6.0}, belief=0.297, context=0.297, uncertainty=1.000, negative=0.0
+
+========== Belief Goal 0 ==========
+Current position: {'x': -3.0, 'y': 0.9011250734329224, 'z': 2.0}
+Selected goal: {'x': -1.75, 'y': 0.9011250734329224, 'z': 6.25}
+Goal info: {'belief': 0.3057955277219959, 'uncertainty': 1.0, 'context_score': 0.3057955277219959, 'path_cost': 29, 'seen_count': 0.0, 'negative_count': 0.0, 'visit_count': 0.0, 'score': 1.9695463326639508}
+Observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.32088580646147535, 'score': 0.8741753697395325, 'position': {'x': -1.4939478635787964, 'y': 0.9011250734329224, 'z': 1.5516539529621727}, 'count': 1}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.3160715827005846, 'score': 0.7967763543128967, 'position': {'x': -3.1535870833740436, 'y': 0.9011250734329224, 'z': 6.729255676269531}, 'count': 1}
+{'label': 'side table', 'matched_context': 'side table', 'prior_weight': 0.6885746853542192, 'score': 0.7479832172393799, 'position': {'x': -2.260620723074987, 'y': 0.9011250734329224, 'z': 6.997629165649414}, 'count': 1}
+{'label': 'box', 'matched_context': 'box', 'prior_weight': 0.4316793291713396, 'score': 0.4255583584308624, 'position': {'x': -1.9574195952359537, 'y': 0.9011250734329224, 'z': 6.660134792327881}, 'count': 1}
+Planned actions: ['RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of actions: 29
+Goal 0, action 0: RotateLeft, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.797
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.748
+[Context detected] label=box, matched_context=box, raw_prior=0.617, anchor=0.70, effective_prior=0.432, score=0.426
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 1: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.875
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.822
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.530
+[Context detected] label=box, matched_context=box, raw_prior=0.617, anchor=0.70, effective_prior=0.432, score=0.312
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.304
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.285
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 2: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.882
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.771
+[Context detected] label=box, matched_context=box, raw_prior=0.617, anchor=0.70, effective_prior=0.432, score=0.438
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.306
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 3: MoveAhead, success=True
+[Context detected] label=tv, matched_context=tv, raw_prior=0.632, anchor=0.50, effective_prior=0.316, score=0.866
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.841
+[Context detected] label=box, matched_context=box, raw_prior=0.617, anchor=0.70, effective_prior=0.432, score=0.494
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.629, anchor=0.50, effective_prior=0.315, score=0.411
+[Target check] target_query=plant, target_prompt=house plant, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 4: RotateRight, success=True
+[Target check] target_query=plant, target_prompt=house plant, status=too_small_or_low_conf, det={'label': 'house plant', 'score': 0.17617040872573853, 'box': [101.49583435058594, 307.2554016113281, 169.7657928466797, 384.9805603027344]}
+Move-time YOLO target status: too_small_or_low_conf
+Goal 0, action 5: MoveAhead, success=True
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.287
+[Target check] target_query=plant, target_prompt=house plant, status=valid, det={'label': 'house plant', 'score': 0.2615813612937927, 'box': [81.21951293945312, 315.5762939453125, 154.665771484375, 398.40673828125]}
+Move-time YOLO target status: valid
+Goal 0, action 6: MoveAhead, success=True
+[Context detected] label=side table, matched_context=side table, raw_prior=0.689, anchor=1.00, effective_prior=0.689, score=0.276
+[Target check] target_query=plant, target_prompt=house plant, status=valid, det={'label': 'house plant', 'score': 0.26359474658966064, 'box': [53.95945358276367, 322.29296875, 138.16795349121094, 416.854736328125]}
+Move-time YOLO target status: valid
+
+YOLO found stable target while moving: plant
+Stable target position: {'x': -0.0007600784301757812, 'y': 0.9011250734329224, 'z': 3.760747319859952, 'depth': 2.624239921569824}
+
+=== Approach Target ===
+Stable estimated target position: {'x': -0.0007600784301757812, 'y': 0.9011250734329224, 'z': 3.760747319859952, 'depth': 2.624239921569824}
+Selected approach goal: {'x': -0.75, 'y': 0.9011250734329224, 'z': 3.25}
+Goal distance to estimated target: 0.907
+Approach actions: ['MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of approach actions: 11
+Approach action 0: MoveAhead, success=True
+Approach action 1: MoveAhead, success=True
+Approach action 2: MoveAhead, success=True
+Approach action 3: MoveAhead, success=True
+Approach action 4: RotateLeft, success=True
+Approach action 5: MoveAhead, success=True
+Approach action 6: MoveAhead, success=True
+Approach action 7: RotateRight, success=True
+Approach action 8: MoveAhead, success=True
+Approach action 9: MoveAhead, success=True
+Approach action 10: MoveAhead, success=True
+Final verify 0, action=None, status=not_detected, det=None
+Final verify 1, action=LookDown, status=not_detected, det=None
+Final verify 2, action=RotateRight, status=valid, det={'label': 'house plant', 'score': 0.34815627336502075, 'box': [197.91632080078125, 0.0, 270.0274658203125, 222.9833984375]}
+
+=== Approach Finished ===
+Final agent position: {'x': -0.75, 'y': 0.9011250734329224, 'z': 3.25}
+Final distance to estimated target: 0.907
+Final YOLO status: valid
+Final YOLO target detection: {'label': 'house plant', 'score': 0.34815627336502075, 'box': [197.91632080078125, 0.0, 270.0274658203125, 222.9833984375]}
+
+========== Summary ==========
+scene: FloorPlan205
+target: plant
+resolved_target: house plant
+success: True
+visited_belief_goals: 0
+visited_reachable_points: 2
+total_actions: 24
+num_context_objects: 8
+anchor_searches: 0
+searched_anchors: 0
+save_dir: outputs/batch_spub_20260529_165941/FloorPlan205_plant
+log_path: outputs/batch_spub_20260529_165941/FloorPlan205_plant/run.log

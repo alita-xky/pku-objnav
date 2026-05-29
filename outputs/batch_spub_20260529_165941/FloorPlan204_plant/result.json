@@ -1,0 +1,14 @@
+{
+  "scene": "FloorPlan204",
+  "target": "plant",
+  "resolved_target": "house plant",
+  "success": true,
+  "visited_belief_goals": 0,
+  "visited_reachable_points": 1,
+  "total_actions": 50,
+  "num_context_objects": 6,
+  "anchor_searches": 0,
+  "searched_anchors": 0,
+  "save_dir": "outputs/batch_spub_20260529_165941/FloorPlan204_plant",
+  "log_path": "outputs/batch_spub_20260529_165941/FloorPlan204_plant/run.log"
+}

@@ -1,0 +1,469 @@
+
+=== Scene ===
+FloorPlan203
+
+=== Target Query ===
+coffee table
+
+=== Resolved Target Prompt ===
+coffee table
+
+=== Debug Force Search ===
+False
+
+=== Contexts From Semantic Prior ===
+sofa                 score=0.914
+pillow               score=0.836
+tv                   score=0.825
+box                  score=0.815
+laptop               score=0.800
+house plant          score=0.720
+arm chair            score=0.698
+painting             score=0.678
+
+=== YOLO Classes ===
+['arm chair', 'book', 'box', 'chair', 'coffee table', 'couch', 'desk', 'desk lamp', 'dining table', 'floor lamp', 'house plant', 'lamp', 'laptop', 'monitor', 'newspaper', 'painting', 'pen', 'pencil', 'pillow', 'plant', 'remote control', 'side table', 'sofa', 'table', 'television', 'tv', 'tv stand']
+CloudRendering failed, trying normal rendering.
+Reason: Exception('The following builds were found, but had missing dependencies. Only one valid platform is required to run AI2-THOR.\nPlatform CloudRendering failed validation with the following errors: Vulkan API driver missing.\n  CloudRendering requires libvulkan1. Please install by running: sudo apt-get -y install libvulkan1')
+
+=== Initial Pose ===
+{'position': {'x': -3.0, 'y': 0.9070531129837036, 'z': 2.75}, 'rotation': {'x': -0.0, 'y': 90.0, 'z': 0.0}, 'camera_horizon': -0.0}
+
+Number of reachable positions: 593
+
+========== Initial YOLO Observation ==========
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.926
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.880
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.820
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.777
+[Context detected] label=couch, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.768
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.754
+[Context detected] label=television, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.630
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.489
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.389
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.352
+[Context detected] label=television, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.314
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.280
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.272
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.231
+[Context detected] label=couch, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.192
+[Target check] target_query=coffee table, target_prompt=coffee table, status=valid, det={'label': 'coffee table', 'score': 0.8717902302742004, 'box': [77.06269836425781, 362.6810607910156, 181.3761444091797, 428.6341247558594]}
+Observe rotation 0:
+YOLO detections: [('laptop', 0.926, [283.6, 327.0, 337.0, 374.3]), ('sofa', 0.88, [0.0, 319.7, 133.2, 478.4]), ('coffee table', 0.872, [77.1, 362.7, 181.4, 428.6]), ('tv', 0.82, [277.4, 194.1, 396.9, 266.2]), ('pillow', 0.777, [0.0, 328.8, 69.9, 376.5]), ('couch', 0.768, [0.0, 317.2, 133.1, 478.1]), ('sofa', 0.754, [34.0, 390.8, 640.0, 479.9]), ('television', 0.63, [277.8, 194.0, 396.5, 264.5]), ('pillow', 0.489, [3.3, 391.5, 170.3, 480.0]), ('book', 0.435, [108.7, 369.7, 154.7, 388.4]), ('side table', 0.429, [260.6, 352.6, 417.3, 448.6]), ('desk', 0.401, [261.0, 352.5, 417.2, 448.0]), ('tv stand', 0.394, [262.2, 353.2, 416.4, 448.3]), ('sofa', 0.389, [0.0, 390.9, 462.3, 480.0]), ('pillow', 0.352, [528.4, 390.5, 640.0, 479.9]), ('television', 0.314, [296.6, 327.0, 336.9, 373.2]), ('pillow', 0.28, [0.0, 312.7, 44.4, 365.1]), ('sofa', 0.272, [327.5, 390.9, 639.9, 480.0]), ('pillow', 0.231, [0.0, 313.4, 45.7, 346.3]), ('couch', 0.192, [1.1, 397.4, 594.6, 479.9]), ('painting', 0.179, [489.5, 177.6, 599.6, 253.8])]
+Target status: valid
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.750
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.746
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.733
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.397
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.196
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.184
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('lamp', 0.93, [447.9, 111.8, 539.8, 218.4]), ('chair', 0.75, [344.8, 312.0, 411.4, 467.8]), ('chair', 0.746, [435.0, 329.2, 523.8, 480.0]), ('chair', 0.733, [536.8, 326.6, 640.0, 480.0]), ('dining table', 0.642, [382.4, 333.4, 632.9, 479.1]), ('tv stand', 0.523, [0.0, 345.5, 82.4, 480.0]), ('chair', 0.397, [542.2, 305.4, 631.7, 459.3]), ('book', 0.264, [450.5, 351.7, 494.7, 363.9]), ('side table', 0.26, [473.2, 299.2, 510.6, 334.1]), ('book', 0.201, [392.2, 333.8, 426.0, 344.0]), ('chair', 0.196, [525.0, 301.3, 571.6, 418.9]), ('chair', 0.184, [458.1, 303.6, 525.0, 432.7]), ('floor lamp', 0.18, [400.9, 299.7, 438.5, 335.3]), ('arm chair', 0.17, [431.2, 308.6, 463.3, 334.2]), ('arm chair', 0.168, [531.7, 303.0, 569.8, 335.0]), ('chair', 0.126, [541.4, 341.7, 622.2, 445.8]), ('chair', 0.122, [473.8, 300.5, 512.1, 332.6])]
+Target status: not_detected
+[Context detected] label=painting, matched_context=painting, raw_prior=0.678, anchor=0.50, effective_prior=0.339, score=0.259
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: [('painting', 0.259, [0.0, 159.7, 50.1, 278.8]), ('desk', 0.182, [0.4, 428.3, 368.5, 480.0])]
+Target status: not_detected
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('side table', 0.191, [0.0, 270.5, 80.9, 480.0]), ('chair', 0.165, [0.0, 272.0, 81.4, 480.0])]
+Target status: not_detected
+Stable target position from multi-view YOLO-depth: {'x': 0.18933701515197754, 'y': 0.9070531129837036, 'z': 3.8490644862149264, 'depth': 3.1893370151519775}
+Best target detection: {'label': 'coffee table', 'score': 0.8717902302742004, 'box': [77.06269836425781, 362.6810607910156, 181.3761444091797, 428.6341247558594]}
+Initial observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.5596541048319665, 'score': 0.9264622330665588, 'position': {'x': 0.5151786804199219, 'y': 0.9070531129837036, 'z': 2.81342154241844}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.8800447583198547, 'position': {'x': 0.06474542617797852, 'y': 0.9070531129837036, 'z': 4.154486329961214}, 'count': 2}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.8199814558029175, 'position': {'x': 1.4598455429077148, 'y': 0.9070531129837036, 'z': 2.6212553487629044}, 'count': 2}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.7773736715316772, 'position': {'x': 0.4415593942006429, 'y': 0.9070531129837036, 'z': 4.576226893611386}, 'count': 3}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.7541139125823975, 'position': {'x': 0.0626233418782552, 'y': 0.9070531129837036, 'z': 2.9268206096843428}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.4893438220024109, 'position': {'x': -1.0539419651031494, 'y': 0.9070531129837036, 'z': 3.571601151536504}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.3521556556224823, 'position': {'x': -0.9916446208953857, 'y': 0.9070531129837036, 'z': 1.7970157861486606}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.3140772581100464, 'position': {'x': 0.4896237850189209, 'y': 0.9070531129837036, 'z': 2.77518419039564}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.27158322930336, 'position': {'x': 0.06538152694702148, 'y': 0.9070531129837036, 'z': 1.8485087109076932}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.7495855093002319, 'position': {'x': -3.365155106373298, 'y': 0.9070531129837036, 'z': -0.8006930351257324}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.7457860112190247, 'position': {'x': -4.101490977422447, 'y': 0.9070531129837036, 'z': -0.049982213973999025}, 'count': 5}
+{'label': 'painting', 'matched_context': 'painting', 'prior_weight': 0.33913471450561317, 'score': 0.2589567005634308, 'position': {'x': -6.496882915496826, 'y': 0.9070531129837036, 'z': 0.8888023240216396}, 'count': 1}
+
+Top belief nodes:
+  0: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.895, context=0.895, uncertainty=1.000, negative=0.0
+  1: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.895, context=0.895, uncertainty=1.000, negative=0.0
+  2: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.893, context=0.893, uncertainty=1.000, negative=0.0
+  3: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.892, context=0.892, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.886, context=0.886, uncertainty=1.000, negative=0.0
+  5: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.884, context=0.884, uncertainty=1.000, negative=0.0
+  6: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.883, context=0.883, uncertainty=1.000, negative=0.0
+  7: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.25}, belief=0.881, context=0.881, uncertainty=1.000, negative=0.0
+  8: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.877, context=0.877, uncertainty=1.000, negative=0.0
+  9: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 4.0}, belief=0.876, context=0.876, uncertainty=1.000, negative=0.0
+
+YOLO found stable target at initial area. Now approaching target...
+
+=== Approach Target ===
+Stable estimated target position: {'x': 0.18933701515197754, 'y': 0.9070531129837036, 'z': 3.8490644862149264, 'depth': 3.1893370151519775}
+Selected approach goal: {'x': -1.0, 'y': 0.9070531129837036, 'z': 4.5}
+Goal distance to estimated target: 1.356
+Approach actions: ['RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of approach actions: 17
+Approach action 0: RotateLeft, success=True
+Approach action 1: MoveAhead, success=True
+Approach action 2: MoveAhead, success=True
+Approach action 3: MoveAhead, success=True
+Approach action 4: MoveAhead, success=True
+Approach action 5: MoveAhead, success=True
+Approach action 6: MoveAhead, success=True
+Approach action 7: MoveAhead, success=True
+Approach action 8: RotateRight, success=True
+Approach action 9: MoveAhead, success=True
+Approach action 10: MoveAhead, success=True
+Approach action 11: MoveAhead, success=True
+Approach action 12: MoveAhead, success=True
+Approach action 13: MoveAhead, success=True
+Approach action 14: MoveAhead, success=True
+Approach action 15: MoveAhead, success=True
+Approach action 16: MoveAhead, success=True
+Final verify 0, action=None, status=not_detected, det=None
+Final verify 1, action=LookDown, status=not_detected, det=None
+Final verify 2, action=RotateRight, status=not_detected, det=None
+Final verify 3, action=RotateRight, status=not_detected, det=None
+Final verify 4, action=RotateRight, status=not_detected, det=None
+Final verify 5, action=LookUp, status=not_detected, det=None
+Final verify 6, action=RotateRight, status=not_detected, det=None
+Final verify 7, action=LookDown, status=not_detected, det=None
+
+=== Approach Finished ===
+Final agent position: {'x': -1.0, 'y': 0.9070531129837036, 'z': 4.5}
+Final distance to estimated target: 1.356
+Final YOLO status: not_detected
+Final YOLO target detection: None
+
+Top belief nodes:
+  0: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.895, context=0.895, uncertainty=1.000, negative=0.0
+  1: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.895, context=0.895, uncertainty=1.000, negative=0.0
+  2: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.893, context=0.893, uncertainty=1.000, negative=0.0
+  3: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.892, context=0.892, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.886, context=0.886, uncertainty=1.000, negative=0.0
+
+========== Belief Goal 0 ==========
+Current position: {'x': -1.0, 'y': 0.9070531129837036, 'z': 4.5}
+Selected goal: {'x': -0.25, 'y': 0.9070531129837036, 'z': 4.25}
+Goal info: {'belief': 0.8670529803636106, 'uncertainty': 1.0, 'context_score': 0.8670529803636106, 'path_cost': 6, 'seen_count': 0.0, 'negative_count': 0.0, 'visit_count': 0.0, 'score': 11.004635764363327}
+Observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.5596541048319665, 'score': 0.9264622330665588, 'position': {'x': 0.5151786804199219, 'y': 0.9070531129837036, 'z': 2.81342154241844}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.8800447583198547, 'position': {'x': 0.06474542617797852, 'y': 0.9070531129837036, 'z': 4.154486329961214}, 'count': 2}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.8199814558029175, 'position': {'x': 1.4598455429077148, 'y': 0.9070531129837036, 'z': 2.6212553487629044}, 'count': 2}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.7773736715316772, 'position': {'x': 0.4415593942006429, 'y': 0.9070531129837036, 'z': 4.576226893611386}, 'count': 3}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.7541139125823975, 'position': {'x': 0.0626233418782552, 'y': 0.9070531129837036, 'z': 2.9268206096843428}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.4893438220024109, 'position': {'x': -1.0539419651031494, 'y': 0.9070531129837036, 'z': 3.571601151536504}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.3521556556224823, 'position': {'x': -0.9916446208953857, 'y': 0.9070531129837036, 'z': 1.7970157861486606}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.3140772581100464, 'position': {'x': 0.4896237850189209, 'y': 0.9070531129837036, 'z': 2.77518419039564}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.27158322930336, 'position': {'x': 0.06538152694702148, 'y': 0.9070531129837036, 'z': 1.8485087109076932}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.7495855093002319, 'position': {'x': -3.365155106373298, 'y': 0.9070531129837036, 'z': -0.8006930351257324}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.7457860112190247, 'position': {'x': -4.101490977422447, 'y': 0.9070531129837036, 'z': -0.049982213973999025}, 'count': 5}
+{'label': 'painting', 'matched_context': 'painting', 'prior_weight': 0.33913471450561317, 'score': 0.2589567005634308, 'position': {'x': -6.496882915496826, 'y': 0.9070531129837036, 'z': 0.8888023240216396}, 'count': 1}
+Planned actions: ['RotateRight', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of actions: 6
+Goal 0, action 0: RotateRight, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.903
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.873
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.722
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.700
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.673
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.575
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.329
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.302
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.291
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.268
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.258
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.246
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.241
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.215
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 1: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.892
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.791
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.767
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.689
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.674
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.660
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.483
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.467
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.354
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.311
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.275
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.213
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 2: RotateLeft, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.903
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.817
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.788
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.446
+[Context detected] label=television, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.324
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.290
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.257
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.186
+[Target check] target_query=coffee table, target_prompt=coffee table, status=valid, det={'label': 'coffee table', 'score': 0.41261887550354004, 'box': [236.80068969726562, 248.55029296875, 371.8152770996094, 439.11328125]}
+Move-time YOLO target status: valid
+Goal 0, action 3: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.895
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.831
+[Context detected] label=television, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.308
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 0, action 4: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.911
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.775
+[Context detected] label=television, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.426
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.225
+[Target check] target_query=coffee table, target_prompt=coffee table, status=too_small_or_low_conf, det={'label': 'coffee table', 'score': 0.17338359355926514, 'box': [192.373291015625, 308.695556640625, 392.39453125, 480.0]}
+Move-time YOLO target status: too_small_or_low_conf
+Goal 0, action 5: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.797
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.474
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.372
+[Context detected] label=couch, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.244
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.190
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.797
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.474
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.372
+[Context detected] label=couch, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.244
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.190
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 0:
+YOLO detections: [('sofa', 0.797, [0.0, 251.7, 232.9, 480.0]), ('pillow', 0.474, [0.0, 308.1, 97.1, 480.0]), ('pillow', 0.372, [0.0, 252.9, 237.1, 415.4]), ('book', 0.347, [247.1, 416.9, 349.4, 480.0]), ('book', 0.335, [188.4, 349.5, 394.9, 480.0]), ('couch', 0.244, [0.0, 252.5, 233.1, 480.0]), ('sofa', 0.19, [0.7, 252.0, 593.6, 480.0]), ('pillow', 0.169, [1.0, 253.1, 238.1, 363.3]), ('pillow', 0.164, [8.7, 356.7, 220.8, 480.0]), ('book', 0.146, [264.1, 416.8, 326.2, 479.7]), ('couch', 0.145, [0.0, 253.9, 637.9, 479.9]), ('desk', 0.14, [3.0, 326.3, 639.7, 480.0]), ('sofa', 0.134, [0.3, 252.0, 414.8, 480.0])]
+Target status: not_detected
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.960
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.943
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.394
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.364
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.257
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.234
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.220
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.188
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.186
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('laptop', 0.96, [95.4, 201.8, 225.1, 319.0]), ('sofa', 0.943, [371.0, 131.6, 640.0, 480.0]), ('tv stand', 0.748, [35.5, 200.6, 272.5, 434.8]), ('desk', 0.734, [36.0, 202.1, 272.3, 434.7]), ('side table', 0.711, [354.8, 85.8, 451.7, 180.1]), ('side table', 0.477, [35.6, 202.6, 272.8, 434.8]), ('pillow', 0.394, [531.9, 141.8, 640.0, 279.5]), ('chair', 0.364, [580.0, 53.3, 640.0, 132.6]), ('desk', 0.323, [354.1, 78.6, 501.9, 178.1]), ('house plant', 0.257, [353.4, 19.0, 401.1, 89.2]), ('box', 0.234, [390.0, 78.6, 413.5, 89.8]), ('pillow', 0.22, [371.6, 135.8, 522.5, 199.1]), ('pillow', 0.188, [371.9, 135.7, 523.4, 235.0]), ('arm chair', 0.186, [439.0, 85.2, 492.2, 136.5]), ('pillow', 0.168, [473.1, 126.8, 639.8, 212.4]), ('pillow', 0.129, [472.1, 130.1, 640.0, 280.6]), ('book', 0.127, [410.6, 81.8, 426.5, 90.0])]
+Target status: not_detected
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.813
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.489
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.318
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: [('pillow', 0.813, [0.0, 169.0, 216.9, 326.7]), ('sofa', 0.489, [0.0, 174.3, 248.1, 480.0]), ('laptop', 0.318, [0.0, 0.0, 139.8, 125.6]), ('box', 0.173, [0.0, 0.0, 139.8, 125.8]), ('book', 0.171, [0.0, 0.0, 140.5, 126.4]), ('side table', 0.165, [0.7, 122.1, 191.0, 180.9])]
+Target status: not_detected
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.854
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.718
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.357
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.316
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.290
+[Context detected] label=television, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.274
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('pillow', 0.854, [463.5, 304.5, 640.0, 450.7]), ('sofa', 0.718, [298.3, 226.5, 640.0, 480.0]), ('desk lamp', 0.617, [502.1, 0.0, 636.1, 226.5]), ('side table', 0.4, [543.1, 103.1, 640.0, 230.7]), ('tv stand', 0.39, [542.9, 102.7, 640.0, 230.9]), ('pillow', 0.357, [340.4, 225.6, 640.0, 389.7]), ('box', 0.316, [543.5, 102.7, 640.0, 231.2]), ('pillow', 0.29, [338.2, 227.1, 640.0, 480.0]), ('tv stand', 0.285, [491.9, 0.0, 633.9, 39.3]), ('television', 0.274, [520.6, 0.0, 630.0, 16.2]), ('book', 0.24, [515.8, 0.0, 630.5, 15.9]), ('lamp', 0.163, [488.8, 0.0, 634.4, 33.8]), ('sofa', 0.136, [0.4, 226.9, 640.0, 480.0])]
+Target status: not_detected
+
+Top belief nodes:
+  0: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.25}, belief=0.981, context=0.981, uncertainty=1.000, negative=0.0
+  1: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.979, context=0.979, uncertainty=1.000, negative=0.0
+  2: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.975, context=0.975, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.0}, belief=0.974, context=0.974, uncertainty=1.000, negative=0.0
+  4: pos={'x': 1.0, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.968, context=0.968, uncertainty=1.000, negative=0.0
+
+========== Belief Goal 1 ==========
+Current position: {'x': -0.25, 'y': 0.9070531129837036, 'z': 4.25}
+Selected goal: {'x': -0.25, 'y': 0.9070531129837036, 'z': 2.25}
+Goal info: {'belief': 0.9809708579078806, 'uncertainty': 1.0, 'context_score': 0.9809708579078806, 'path_cost': 9, 'seen_count': 0.0, 'negative_count': 0.0, 'visit_count': 0.0, 'score': 12.071650294894567}
+Observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.5596541048319665, 'score': 0.9596015214920044, 'position': {'x': 0.20316922493759765, 'y': 0.9070531129837036, 'z': 2.4206333269620814}, 'count': 5}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.8800447583198547, 'position': {'x': 0.06474542617797852, 'y': 0.9070531129837036, 'z': 4.154486329961214}, 'count': 2}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.8199814558029175, 'position': {'x': 1.4598455429077148, 'y': 0.9070531129837036, 'z': 2.6212553487629044}, 'count': 2}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.8310972452163696, 'position': {'x': 0.626077307595147, 'y': 0.9070531129837036, 'z': 4.768475124486279}, 'count': 9}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.7541139125823975, 'position': {'x': 0.0626233418782552, 'y': 0.9070531129837036, 'z': 2.9268206096843428}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.4893438220024109, 'position': {'x': -1.0539419651031494, 'y': 0.9070531129837036, 'z': 3.571601151536504}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.6599389314651489, 'position': {'x': -1.0704681624570613, 'y': 0.9070531129837036, 'z': 1.6620803028317235}, 'count': 8}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.3140772581100464, 'position': {'x': 0.4896237850189209, 'y': 0.9070531129837036, 'z': 2.77518419039564}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.27158322930336, 'position': {'x': 0.06538152694702148, 'y': 0.9070531129837036, 'z': 1.8485087109076932}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.7495855093002319, 'position': {'x': -3.07324312026868, 'y': 0.9070531129837036, 'z': -0.35796615812513566}, 'count': 9}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.7457860112190247, 'position': {'x': -4.101490977422447, 'y': 0.9070531129837036, 'z': -0.049982213973999025}, 'count': 5}
+{'label': 'painting', 'matched_context': 'painting', 'prior_weight': 0.33913471450561317, 'score': 0.2589567005634308, 'position': {'x': -6.496882915496826, 'y': 0.9070531129837036, 'z': 0.8888023240216396}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.9429600238800049, 'position': {'x': -1.1397474783497616, 'y': 0.9070531129837036, 'z': 2.5916269620259604}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.7912429571151733, 'position': {'x': -1.536123564786, 'y': 0.9070531129837036, 'z': 3.0503724813461304}, 'count': 2}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.6998609900474548, 'position': {'x': -2.8722670556858674, 'y': 0.9070531129837036, 'z': -0.3719048500061035}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.6731259822845459, 'position': {'x': -3.22655880637013, 'y': 0.9070531129837036, 'z': 0.12381505966186523}, 'count': 1}
+{'label': 'arm chair', 'matched_context': 'arm chair', 'prior_weight': 0.4889098683626692, 'score': 0.5753438472747803, 'position': {'x': -1.455327528261115, 'y': 0.9070531129837036, 'z': 0.12616459528605142}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.3114354610443115, 'position': {'x': -1.6097075485762735, 'y': 0.9070531129837036, 'z': 2.269929051399231}, 'count': 2}
+{'label': 'house plant', 'matched_context': 'house plant', 'prior_weight': 0.3601024926441225, 'score': 0.2751963138580322, 'position': {'x': -0.7652501870750773, 'y': 0.9070531129837036, 'z': 0.4091342290242513}, 'count': 3}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.9106085300445557, 'position': {'x': 1.0857977469762166, 'y': 0.9070531129837036, 'z': 4.683104283178233}, 'count': 9}
+{'label': 'box', 'matched_context': 'box', 'prior_weight': 0.40727333419063405, 'score': 0.7879067659378052, 'position': {'x': 0.7547900676727295, 'y': 0.9070531129837036, 'z': 3.4299991057905874}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.42553016543388367, 'position': {'x': 1.218358963727951, 'y': 0.9070531129837036, 'z': 3.2821355058747566}, 'count': 4}
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.5596541048319665, 'score': 0.2898333668708801, 'position': {'x': 0.8449621200561525, 'y': 0.9070531129837036, 'z': 3.231412658569753}, 'count': 1}
+{'label': 'box', 'matched_context': 'box', 'prior_weight': 0.40727333419063405, 'score': 0.2571040391921997, 'position': {'x': 0.6281291246414185, 'y': 0.9070531129837036, 'z': 4.29700003941936}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.37155139446258545, 'position': {'x': 1.2502789894739788, 'y': 0.9070531129837036, 'z': 4.806369209287319}, 'count': 3}
+{'label': 'box', 'matched_context': 'box', 'prior_weight': 0.40727333419063405, 'score': 0.2337106168270111, 'position': {'x': -0.7989950378064589, 'y': 0.9070531129837036, 'z': 0.493408203125}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.8125028014183044, 'position': {'x': -1.9232556819915771, 'y': 0.9070531129837036, 'z': 3.6099888152961483}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.48856794834136963, 'position': {'x': -1.8224613666534424, 'y': 0.9070531129837036, 'z': 3.693935141586813}, 'count': 1}
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.5596541048319665, 'score': 0.3179645538330078, 'position': {'x': -6.023094177246093, 'y': 0.9070531129837036, 'z': 1.6356016662505828}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.8355058640456664, 'score': 0.8536446690559387, 'position': {'x': 0.17385749935506856, 'y': 0.9070531129837036, 'z': 5.502650856971741}, 'count': 3}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9144684640902234, 'score': 0.7179994583129883, 'position': {'x': 0.10150775428425057, 'y': 0.9070531129837036, 'z': 5.56638765335083}, 'count': 1}
+{'label': 'box', 'matched_context': 'box', 'prior_weight': 0.40727333419063405, 'score': 0.31643733382225037, 'position': {'x': 1.0605159858959503, 'y': 0.9070531129837036, 'z': 6.9303014278411865}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.8247200883115978, 'score': 0.274199515581131, 'position': {'x': 0.6851943112008503, 'y': 0.9070531129837036, 'z': 6.282695293426514}, 'count': 1}
+Planned actions: ['RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of actions: 9
+Goal 1, action 0: RotateRight, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.960
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.943
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.394
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.364
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.257
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.234
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.220
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.188
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.186
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 1: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.962
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.938
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.388
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.264
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.223
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 2: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.943
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.855
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.236
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.218
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.199
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 3: MoveAhead, success=True
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.960
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.797
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.526
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.511
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.386
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.336
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 4: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.911
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.456
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.316
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.258
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.231
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 5: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.932
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.604
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.420
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.402
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.385
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.193
+[Target check] target_query=coffee table, target_prompt=coffee table, status=too_small_or_low_conf, det={'label': 'coffee table', 'score': 0.13264200091362, 'box': [366.95355224609375, 111.55659484863281, 558.854248046875, 234.6969757080078]}
+Move-time YOLO target status: too_small_or_low_conf
+Goal 1, action 6: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.857
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.566
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.481
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.317
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 7: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.823
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.396
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.270
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.182
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+Goal 1, action 8: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.534
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.393
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.217
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.192
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.187
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Move-time YOLO target status: not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.534
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.720, anchor=0.50, effective_prior=0.360, score=0.393
+[Context detected] label=box, matched_context=box, raw_prior=0.815, anchor=0.50, effective_prior=0.407, score=0.217
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.192
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.187
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 0:
+YOLO detections: [('side table', 0.935, [377.7, 144.3, 567.2, 308.3]), ('sofa', 0.534, [424.9, 327.7, 640.0, 480.0]), ('house plant', 0.393, [382.0, 37.0, 486.8, 164.0]), ('book', 0.298, [446.7, 143.3, 492.3, 165.3]), ('box', 0.217, [447.2, 143.4, 492.3, 165.6]), ('tv', 0.192, [0.0, 182.7, 183.1, 376.1]), ('pillow', 0.187, [428.0, 328.2, 640.0, 480.0]), ('tv stand', 0.175, [476.4, 149.5, 619.6, 278.4])]
+Target status: not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.926
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.843
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.740
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.661
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.651
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.485
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.256
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.225
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.206
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.698, anchor=0.70, effective_prior=0.489, score=0.182
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('sofa', 0.926, [0.0, 167.2, 639.6, 480.0]), ('pillow', 0.843, [395.0, 169.5, 640.0, 325.8]), ('chair', 0.74, [65.5, 57.9, 155.4, 169.7]), ('chair', 0.661, [0.0, 76.1, 51.6, 225.1]), ('chair', 0.651, [48.9, 74.0, 126.6, 195.3]), ('dining table', 0.499, [0.1, 82.8, 120.3, 210.1]), ('pillow', 0.485, [257.7, 168.1, 398.9, 317.9]), ('arm chair', 0.256, [22.8, 58.9, 63.6, 87.4]), ('chair', 0.225, [0.0, 117.0, 50.5, 222.7]), ('book', 0.223, [38.6, 100.0, 75.4, 109.5]), ('chair', 0.206, [238.6, 59.9, 266.5, 129.0]), ('chair', 0.182, [14.1, 60.1, 76.3, 177.0]), ('chair', 0.165, [109.4, 59.3, 155.5, 167.9]), ('chair', 0.147, [0.5, 65.9, 55.1, 192.5]), ('painting', 0.14, [51.9, 0.0, 187.6, 28.8]), ('arm chair', 0.128, [0.0, 60.4, 18.4, 96.6]), ('floor lamp', 0.12, [239.0, 59.5, 266.8, 129.1])]
+Target status: not_detected
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.836, anchor=1.00, effective_prior=0.836, score=0.881
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.869
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.914, anchor=1.00, effective_prior=0.914, score=0.806
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.211
+[Target check] target_query=coffee table, target_prompt=coffee table, status=valid, det={'label': 'coffee table', 'score': 0.833444356918335, 'box': [367.845703125, 215.3054656982422, 545.1927490234375, 320.67315673828125]}
+Observe rotation 2:
+YOLO detections: [('pillow', 0.881, [379.7, 125.5, 455.4, 182.5]), ('sofa', 0.869, [313.0, 103.1, 550.4, 266.1]), ('lamp', 0.856, [425.8, 0.2, 492.9, 104.7]), ('coffee table', 0.833, [367.8, 215.3, 545.2, 320.7]), ('sofa', 0.806, [0.0, 222.9, 240.5, 479.9]), ('book', 0.576, [489.5, 403.9, 639.4, 480.0]), ('book', 0.346, [407.4, 222.0, 471.1, 249.4]), ('desk', 0.324, [399.8, 371.6, 640.0, 480.0]), ('book', 0.271, [399.5, 371.4, 640.0, 480.0]), ('pen', 0.221, [0.1, 348.0, 67.0, 397.9]), ('laptop', 0.211, [0.0, 324.1, 224.6, 480.0]), ('pencil', 0.208, [0.0, 347.9, 66.3, 419.1]), ('pencil', 0.128, [0.0, 347.8, 66.3, 473.6]), ('pillow', 0.126, [0.0, 222.9, 240.8, 386.0]), ('pencil', 0.121, [0.0, 348.0, 66.6, 397.0])]
+Target status: valid
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.800, anchor=0.70, effective_prior=0.560, score=0.939
+[Context detected] label=tv, matched_context=tv, raw_prior=0.825, anchor=1.00, effective_prior=0.825, score=0.304
+[Target check] target_query=coffee table, target_prompt=coffee table, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('laptop', 0.939, [0.1, 328.1, 179.8, 480.0]), ('desk', 0.608, [0.0, 356.8, 428.2, 480.0]), ('tv', 0.304, [26.1, 0.0, 416.5, 81.6]), ('tv stand', 0.185, [605.0, 267.1, 640.0, 405.3]), ('television', 0.148, [30.7, 0.0, 416.9, 81.8]), ('desk lamp', 0.126, [554.9, 92.1, 640.0, 449.0])]
+Target status: not_detected
+Stable target position from multi-view YOLO-depth: {'x': 0.29513528569577274, 'y': 0.9070531129837036, 'z': 4.471651792526245, 'depth': 2.221651792526245}
+Best target detection: {'label': 'coffee table', 'score': 0.833444356918335, 'box': [367.845703125, 215.3054656982422, 545.1927490234375, 320.67315673828125]}
+
+YOLO found stable target after observing: coffee table
+Stable target position: {'x': 0.29513528569577274, 'y': 0.9070531129837036, 'z': 4.471651792526245, 'depth': 2.221651792526245}
+
+=== Approach Target ===
+Stable estimated target position: {'x': 0.29513528569577274, 'y': 0.9070531129837036, 'z': 4.471651792526245, 'depth': 2.221651792526245}
+Selected approach goal: {'x': -0.25, 'y': 0.9070531129837036, 'z': 3.25}
+Goal distance to estimated target: 1.338
+Approach actions: ['RotateRight', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of approach actions: 6
+Approach action 0: RotateRight, success=True
+Approach action 1: RotateRight, success=True
+Approach action 2: MoveAhead, success=True
+Approach action 3: MoveAhead, success=True
+Approach action 4: MoveAhead, success=True
+Approach action 5: MoveAhead, success=True
+Final verify 0, action=None, status=valid, det={'label': 'coffee table', 'score': 0.6198681592941284, 'box': [390.96710205078125, 324.4536437988281, 640.0, 479.8296813964844]}
+
+=== Approach Finished ===
+Final agent position: {'x': -0.25, 'y': 0.9070531129837036, 'z': 3.25}
+Final distance to estimated target: 1.338
+Final YOLO status: valid
+Final YOLO target detection: {'label': 'coffee table', 'score': 0.6198681592941284, 'box': [390.96710205078125, 324.4536437988281, 640.0, 479.8296813964844]}
+
+========== Summary ==========
+scene: FloorPlan203
+target: coffee table
+resolved_target: coffee table
+success: True
+visited_belief_goals: 1
+visited_reachable_points: 3
+total_actions: 57
+num_context_objects: 45
+anchor_searches: 0
+searched_anchors: 0
+save_dir: outputs/batch_spub_20260529_165941/FloorPlan203_coffee_table
+log_path: outputs/batch_spub_20260529_165941/FloorPlan203_coffee_table/run.log

@@ -1,0 +1,611 @@
+
+=== Scene ===
+FloorPlan204
+
+=== Target Query ===
+laptop
+
+=== Resolved Target Prompt ===
+laptop
+
+=== Debug Force Search ===
+False
+
+=== Contexts From Semantic Prior ===
+pillow               score=0.800
+window               score=0.794
+drawer               score=0.777
+desk lamp            score=0.716
+side table           score=0.714
+chair                score=0.713
+book                 score=0.666
+painting             score=0.664
+
+=== YOLO Classes ===
+['arm chair', 'book', 'box', 'chair', 'coffee table', 'couch', 'desk', 'desk lamp', 'dining table', 'drawer', 'floor lamp', 'house plant', 'lamp', 'laptop', 'monitor', 'newspaper', 'painting', 'pen', 'pencil', 'pillow', 'plant', 'remote control', 'side table', 'sofa', 'table', 'television', 'tv', 'tv stand', 'window']
+CloudRendering failed, trying normal rendering.
+Reason: Exception('The following builds were found, but had missing dependencies. Only one valid platform is required to run AI2-THOR.\nPlatform CloudRendering failed validation with the following errors: Vulkan API driver missing.\n  CloudRendering requires libvulkan1. Please install by running: sudo apt-get -y install libvulkan1')
+
+=== Initial Pose ===
+{'position': {'x': -1.25, 'y': 0.902314305305481, 'z': 3.0}, 'rotation': {'x': -0.0, 'y': 0.0, 'z': 0.0}, 'camera_horizon': -0.0}
+
+Number of reachable positions: 248
+
+========== Initial YOLO Observation ==========
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.822
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.507
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.403
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.281
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.244
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.216
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.214
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.212
+[Target check] target_query=laptop, target_prompt=laptop, status=too_small_or_low_conf, det={'label': 'laptop', 'score': 0.15972962975502014, 'box': [436.47607421875, 426.24041748046875, 639.5465087890625, 479.908935546875]}
+Observe rotation 0:
+YOLO detections: [('sofa', 0.959, [0.0, 310.7, 374.9, 480.0]), ('couch', 0.936, [0.0, 310.3, 374.7, 480.0]), ('tv', 0.935, [408.3, 254.4, 577.0, 382.1]), ('tv stand', 0.833, [373.9, 345.9, 604.2, 480.0]), ('lamp', 0.822, [586.0, 177.8, 640.0, 475.8]), ('pillow', 0.507, [554.2, 426.0, 640.0, 479.9]), ('pillow', 0.403, [0.0, 409.8, 87.1, 479.9]), ('pillow', 0.281, [0.1, 404.3, 128.3, 479.9]), ('pillow', 0.244, [66.5, 311.1, 163.2, 392.6]), ('pillow', 0.216, [84.3, 404.4, 127.3, 466.8]), ('chair', 0.214, [433.2, 428.4, 639.6, 480.0]), ('pillow', 0.212, [158.9, 311.8, 252.6, 392.1]), ('floor lamp', 0.202, [586.1, 176.8, 640.0, 480.0]), ('remote control', 0.182, [529.6, 384.9, 559.8, 402.7]), ('laptop', 0.16, [436.5, 426.2, 639.5, 479.9]), ('sofa', 0.154, [436.9, 428.4, 639.8, 480.0]), ('pillow', 0.131, [472.3, 426.7, 639.9, 480.0])]
+Target status: too_small_or_low_conf
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.184
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('tv stand', 0.733, [592.2, 424.7, 640.0, 480.0]), ('chair', 0.184, [458.0, 460.3, 608.0, 480.0]), ('box', 0.137, [458.4, 460.1, 609.2, 480.0])]
+Target status: not_detected
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.911
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.825
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.806
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.211
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.191
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: [('lamp', 0.911, [331.8, 160.6, 388.5, 223.9]), ('chair', 0.825, [382.2, 314.9, 445.8, 400.0]), ('chair', 0.806, [329.9, 315.9, 374.5, 398.1]), ('dining table', 0.461, [330.1, 310.0, 450.0, 385.2]), ('arm chair', 0.211, [329.5, 315.7, 374.6, 399.1]), ('house plant', 0.198, [347.0, 275.0, 400.6, 316.6]), ('desk', 0.194, [329.5, 309.2, 449.5, 379.7]), ('chair', 0.191, [329.6, 291.7, 345.3, 313.4]), ('painting', 0.175, [329.6, 216.4, 403.4, 281.7]), ('chair', 0.151, [329.5, 291.7, 356.9, 321.6]), ('sofa', 0.136, [19.3, 409.7, 346.6, 480.0]), ('sofa', 0.129, [333.7, 307.2, 447.5, 363.4])]
+Target status: not_detected
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.523
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.470
+[Context detected] label=window, matched_context=window, raw_prior=0.794, anchor=0.30, effective_prior=0.238, score=0.235
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('sofa', 0.778, [299.4, 324.9, 639.6, 480.0]), ('sofa', 0.682, [0.6, 439.9, 290.4, 480.0]), ('pillow', 0.523, [11.2, 437.2, 148.7, 480.0]), ('pillow', 0.47, [54.9, 437.2, 145.8, 480.0]), ('window', 0.235, [260.2, 114.1, 323.1, 336.4]), ('sofa', 0.196, [2.1, 454.7, 283.2, 480.0]), ('pillow', 0.157, [21.3, 439.3, 105.2, 479.9]), ('lamp', 0.146, [171.5, 237.7, 186.8, 256.0]), ('window', 0.142, [128.4, 113.5, 192.3, 337.9])]
+Target status: not_detected
+Initial observed context objects:
+{'label': 'lamp', 'matched_context': 'desk lamp', 'prior_weight': 0.2147499999797972, 'score': 0.8224112391471863, 'position': {'x': 0.16629228033466203, 'y': 0.902314305305481, 'z': 5.6883180141448975}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.4799999999999999, 'score': 0.5072128772735596, 'position': {'x': -0.479504181042007, 'y': 0.902314305305481, 'z': 4.547290325164795}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.4799999999999999, 'score': 0.403062641620636, 'position': {'x': -1.960626382252703, 'y': 0.902314305305481, 'z': 4.580665032068889}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.4799999999999999, 'score': 0.24377058446407318, 'position': {'x': -2.1983941298926055, 'y': 0.902314305305481, 'z': 6.275215983390808}, 'count': 2}
+{'label': 'chair', 'matched_context': 'chair', 'prior_weight': 0.8556602728302479, 'score': 0.21396858990192413, 'position': {'x': -0.38155311154809535, 'y': 0.902314305305481, 'z': 5.228435754776001}, 'count': 1}
+{'label': 'chair', 'matched_context': 'chair', 'prior_weight': 0.8556602728302479, 'score': 0.18389500677585602, 'position': {'x': 0.4840381145477295, 'y': 0.902314305305481, 'z': 2.3367398659047782}, 'count': 1}
+{'label': 'lamp', 'matched_context': 'desk lamp', 'prior_weight': 0.2147499999797972, 'score': 0.9110883474349976, 'position': {'x': -1.7155268346284906, 'y': 0.902314305305481, 'z': -3.615927219390869}, 'count': 1}
+{'label': 'chair', 'matched_context': 'chair', 'prior_weight': 0.8556602728302479, 'score': 0.8246836066246033, 'position': {'x': -1.6688559661413738, 'y': 0.902314305305481, 'z': -1.477614402770996}, 'count': 3}
+{'label': 'chair', 'matched_context': 'chair', 'prior_weight': 0.8556602728302479, 'score': 0.19055715203285217, 'position': {'x': -1.4529406740962003, 'y': 0.902314305305481, 'z': -3.616537570953369}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.4799999999999999, 'score': 0.5232455134391785, 'position': {'x': -2.786912202835083, 'y': 0.902314305305481, 'z': 2.359461675941853}, 'count': 2}
+{'label': 'window', 'matched_context': 'window', 'prior_weight': 0.23820821002499692, 'score': 0.2345552295446396, 'position': {'x': -21.239999771118164, 'y': 0.902314305305481, 'z': 1.9540758727508927}, 'count': 1}
+
+Top belief nodes:
+  0: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -1.25}, belief=0.462, context=0.462, uncertainty=1.000, negative=0.0
+  1: pos={'x': -1.75, 'y': 0.902314305305481, 'z': -0.75}, belief=0.456, context=0.456, uncertainty=1.000, negative=0.0
+  2: pos={'x': -1.5, 'y': 0.902314305305481, 'z': -0.75}, belief=0.452, context=0.452, uncertainty=1.000, negative=0.0
+  3: pos={'x': -2.0, 'y': 0.902314305305481, 'z': -0.75}, belief=0.439, context=0.439, uncertainty=1.000, negative=0.0
+  4: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -1.0}, belief=0.432, context=0.432, uncertainty=1.000, negative=0.0
+  5: pos={'x': -1.25, 'y': 0.902314305305481, 'z': -0.75}, belief=0.429, context=0.429, uncertainty=1.000, negative=0.0
+  6: pos={'x': -2.25, 'y': 0.902314305305481, 'z': -0.75}, belief=0.408, context=0.408, uncertainty=1.000, negative=0.0
+  7: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -1.25}, belief=0.403, context=0.403, uncertainty=1.000, negative=0.0
+  8: pos={'x': -1.75, 'y': 0.902314305305481, 'z': -0.5}, belief=0.399, context=0.399, uncertainty=1.000, negative=0.0
+  9: pos={'x': -1.5, 'y': 0.902314305305481, 'z': -0.5}, belief=0.397, context=0.397, uncertainty=1.000, negative=0.0
+
+Top belief nodes:
+  0: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -1.25}, belief=0.462, context=0.462, uncertainty=1.000, negative=0.0
+  1: pos={'x': -1.75, 'y': 0.902314305305481, 'z': -0.75}, belief=0.456, context=0.456, uncertainty=1.000, negative=0.0
+  2: pos={'x': -1.5, 'y': 0.902314305305481, 'z': -0.75}, belief=0.452, context=0.452, uncertainty=1.000, negative=0.0
+  3: pos={'x': -2.0, 'y': 0.902314305305481, 'z': -0.75}, belief=0.439, context=0.439, uncertainty=1.000, negative=0.0
+  4: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -1.0}, belief=0.432, context=0.432, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'chair', 'anchor_position': {'x': -1.6688559661413738, 'y': 0.902314305305481, 'z': -1.477614402770996}, 'view_goal': {'x': -1.75, 'y': 0.902314305305481, 'z': -0.25}, 'semantic_score': 0.6703665498508888, 'path_cost': 17, 'score': 3.3229323988071107}
+
+=== Semantic Anchor Local Search ===
+Anchor: chair
+Anchor position: {'x': -1.6688559661413738, 'y': 0.902314305305481, 'z': -1.477614402770996}
+Selected anchor view goal: {'x': -1.75, 'y': 0.902314305305481, 'z': -0.25}
+Distance to anchor: 1.23
+Anchor approach actions: ['RotateLeft', 'MoveAhead', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Anchor approach action 0: RotateLeft, success=True
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.523
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.470
+[Context detected] label=window, matched_context=window, raw_prior=0.794, anchor=0.30, effective_prior=0.238, score=0.235
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 1: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.199
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 2: MoveAhead, success=True
+[Context detected] label=window, matched_context=window, raw_prior=0.794, anchor=0.30, effective_prior=0.238, score=0.270
+[Context detected] label=window, matched_context=window, raw_prior=0.794, anchor=0.30, effective_prior=0.238, score=0.206
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 3: RotateLeft, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.898
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.762
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.760
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.567
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.535
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.414
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.386
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.344
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.344
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.306
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.239
+[Context detected] label=book, matched_context=book, raw_prior=0.666, anchor=0.60, effective_prior=0.400, score=0.209
+[Target check] target_query=laptop, target_prompt=laptop, status=valid, det={'label': 'laptop', 'score': 0.3199358880519867, 'box': [0.0258636474609375, 375.1123352050781, 92.37614440917969, 472.6194763183594]}
+Anchor move-time target status: valid
+Anchor approach action 4: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.909
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.845
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.815
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.520
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.460
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.392
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.369
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.363
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.331
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.321
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.235
+[Context detected] label=book, matched_context=book, raw_prior=0.666, anchor=0.60, effective_prior=0.400, score=0.224
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.183
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 5: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.925
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.810
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.784
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.515
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.477
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.373
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.308
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.294
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.273
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.247
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.217
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 6: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.923
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.792
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.751
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.445
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.426
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.381
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.292
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.243
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.242
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.235
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.195
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 7: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.935
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.803
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.790
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.569
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.521
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.352
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.259
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.246
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 8: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.932
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.794
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.778
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.488
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.432
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.365
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.346
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.286
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.279
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.272
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.233
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.209
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 9: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.939
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.839
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.790
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.462
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.429
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.324
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.274
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.274
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.237
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.232
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.187
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 10: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.918
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.836
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.797
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.454
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.439
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.406
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.319
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.317
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.313
+[Context detected] label=painting, matched_context=painting, raw_prior=0.664, anchor=0.30, effective_prior=0.199, score=0.262
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.232
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.212
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 11: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.888
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.796
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.775
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.430
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.388
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.388
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.275
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.249
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.218
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 12: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.918
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.580
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.548
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.372
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.295
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.247
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 13: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.936
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.625
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.558
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.320
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.262
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.246
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.214
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 14: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.917
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.787
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.375
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.255
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.198
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.181
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 15: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.877
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.814
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.580
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.577
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 16: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.916
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.815
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.806
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.512
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.460
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.916
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.815
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.806
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.512
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.460
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.789
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.785
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.776
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.705
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.614
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.597
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.247
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.811
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.776
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.639
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.624
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.501
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.492
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.240
+[Context detected] label=window, matched_context=window, raw_prior=0.794, anchor=0.30, effective_prior=0.238, score=0.195
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.233
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.194
+[Context detected] label=desk lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.182
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 5, action=LookUp, target status=not_detected
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.916
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.815
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.806
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.512
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.460
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.789
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.785
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.776
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.705
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.614
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.597
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -3.25}, belief=0.818, context=0.818, uncertainty=1.000, negative=0.0
+  1: pos={'x': -2.5, 'y': 0.902314305305481, 'z': -3.25}, belief=0.802, context=0.802, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -3.25}, belief=0.768, context=0.768, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -3.0}, belief=0.763, context=0.763, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -2.75}, belief=0.757, context=0.757, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'chair', 'anchor_position': {'x': -1.8124298117727373, 'y': 0.902314305305481, 'z': -1.5937558352947234}, 'view_goal': {'x': -2.25, 'y': 0.902314305305481, 'z': -0.5}, 'semantic_score': 0.7233201944936664, 'path_cost': 5, 'score': 5.186561555949331}
+
+=== Semantic Anchor Local Search ===
+Anchor: chair
+Anchor position: {'x': -1.8124298117727373, 'y': 0.902314305305481, 'z': -1.5937558352947234}
+Selected anchor view goal: {'x': -2.25, 'y': 0.902314305305481, 'z': -0.5}
+Distance to anchor: 1.178
+Anchor approach actions: ['RotateRight', 'MoveAhead', 'MoveAhead', 'RotateLeft', 'MoveAhead']
+Anchor approach action 0: RotateRight, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.247
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 1: MoveAhead, success=True
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 2: MoveAhead, success=True
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.297
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 3: RotateLeft, success=True
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.828
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.821
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.576
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.332
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.188
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 4: MoveAhead, success=True
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.860
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.840
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.817
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.860
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.840
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.817
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.501
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.194
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.460
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.250
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.319
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.214
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.187
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Context detected] label=desk lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.733
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.595
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.485
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 5, action=LookUp, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.860
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.840
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.817
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.501
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.194
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -2.5, 'y': 0.902314305305481, 'z': -3.25}, belief=0.875, context=0.875, uncertainty=1.000, negative=0.0
+  1: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -3.25}, belief=0.874, context=0.874, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.5, 'y': 0.902314305305481, 'z': -1.5}, belief=0.847, context=0.847, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -2.75}, belief=0.841, context=0.841, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -3.0}, belief=0.838, context=0.838, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'chair', 'anchor_position': {'x': -1.8394501312351044, 'y': 0.902314305305481, 'z': -1.668479732747348}, 'view_goal': {'x': -2.0, 'y': 0.902314305305481, 'z': -0.5}, 'semantic_score': 0.7357066826822426, 'path_cost': 2, 'score': 5.645653461457941}
+
+=== Semantic Anchor Local Search ===
+Anchor: chair
+Anchor position: {'x': -1.8394501312351044, 'y': 0.902314305305481, 'z': -1.668479732747348}
+Selected anchor view goal: {'x': -2.0, 'y': 0.902314305305481, 'z': -0.5}
+Distance to anchor: 1.179
+Anchor approach actions: ['RotateLeft', 'MoveAhead']
+Anchor approach action 0: RotateLeft, success=True
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.319
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.214
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.187
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 1: MoveAhead, success=True
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Face target action 0: RotateRight, success=True
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.368
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.412
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.189
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 5, action=LookUp, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.775
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.767
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.629
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.582
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.504
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.404
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.377
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.276
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.260
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.234
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -3.25}, belief=0.885, context=0.885, uncertainty=1.000, negative=0.0
+  1: pos={'x': -2.5, 'y': 0.902314305305481, 'z': -3.25}, belief=0.885, context=0.885, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.5, 'y': 0.902314305305481, 'z': -1.5}, belief=0.869, context=0.869, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.5, 'y': 0.902314305305481, 'z': -1.75}, belief=0.860, context=0.860, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -2.75}, belief=0.857, context=0.857, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'chair', 'anchor_position': {'x': -1.8600386064344319, 'y': 0.902314305305481, 'z': -1.6910673360029855}, 'view_goal': {'x': -2.0, 'y': 0.902314305305481, 'z': -0.5}, 'semantic_score': 0.7357066826822426, 'path_cost': 0, 'score': 5.885653461457941}
+
+=== Semantic Anchor Local Search ===
+Anchor: chair
+Anchor position: {'x': -1.8600386064344319, 'y': 0.902314305305481, 'z': -1.6910673360029855}
+Selected anchor view goal: {'x': -2.0, 'y': 0.902314305305481, 'z': -0.5}
+Distance to anchor: 1.199
+Anchor approach actions: []
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.368
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.412
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.189
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 5, action=LookUp, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.775
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.767
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.629
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.582
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.504
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.404
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.377
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.276
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.260
+[Context detected] label=side table, matched_context=side table, raw_prior=0.714, anchor=1.05, effective_prior=0.749, score=0.234
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -1.0, 'y': 0.902314305305481, 'z': -3.25}, belief=0.890, context=0.890, uncertainty=1.000, negative=0.0
+  1: pos={'x': -2.5, 'y': 0.902314305305481, 'z': -3.25}, belief=0.889, context=0.889, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.5, 'y': 0.902314305305481, 'z': -1.5}, belief=0.875, context=0.875, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.5, 'y': 0.902314305305481, 'z': -1.75}, belief=0.866, context=0.866, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.75, 'y': 0.902314305305481, 'z': -2.75}, belief=0.863, context=0.863, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'chair', 'anchor_position': {'x': -0.9396635691324869, 'y': 0.902314305305481, 'z': -1.0697522483119606}, 'view_goal': {'x': -2.0, 'y': 0.902314305305481, 'z': -0.5}, 'semantic_score': 0.5093863577979117, 'path_cost': 0, 'score': 4.075090862383294}
+
+=== Semantic Anchor Local Search ===
+Anchor: chair
+Anchor position: {'x': -0.9396635691324869, 'y': 0.902314305305481, 'z': -1.0697522483119606}
+Selected anchor view goal: {'x': -2.0, 'y': 0.902314305305481, 'z': -0.5}
+Distance to anchor: 1.204
+Anchor approach actions: []
+Face target action 0: RotateLeft, success=True
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.551
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.368
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Target check] target_query=laptop, target_prompt=laptop, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.839
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.716, anchor=0.30, effective_prior=0.215, score=0.827
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.716
+[Context detected] label=chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.713
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.622
+[Context detected] label=arm chair, matched_context=chair, raw_prior=0.713, anchor=1.20, effective_prior=0.856, score=0.225
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.800, anchor=0.60, effective_prior=0.480, score=0.212
+[Target check] target_query=laptop, target_prompt=laptop, status=valid, det={'label': 'laptop', 'score': 0.777411937713623, 'box': [572.342529296875, 132.75889587402344, 640.0, 220.1108856201172]}
+Anchor local search 5, action=LookUp, target status=valid
+Anchor search found target.
+Stable target position: {'x': -0.9502070761071659, 'y': 0.902314305305481, 'z': 1.5415940284729004, 'depth': 2.0415940284729004}
+
+Anchor search found target. Now approaching target...
+
+=== Approach Target ===
+Stable estimated target position: {'x': -0.9502070761071659, 'y': 0.902314305305481, 'z': 1.5415940284729004, 'depth': 2.0415940284729004}
+Selected approach goal: {'x': -1.25, 'y': 0.902314305305481, 'z': 0.75}
+Goal distance to estimated target: 0.846
+Approach actions: ['MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of approach actions: 9
+Approach action 0: MoveAhead, success=True
+Approach action 1: MoveAhead, success=True
+Approach action 2: MoveAhead, success=True
+Approach action 3: MoveAhead, success=True
+Approach action 4: MoveAhead, success=True
+Approach action 5: RotateRight, success=True
+Approach action 6: MoveAhead, success=True
+Approach action 7: MoveAhead, success=True
+Approach action 8: MoveAhead, success=True
+Face target action 0: RotateLeft, success=True
+Final verify 0, action=None, status=valid, det={'label': 'laptop', 'score': 0.33571889996528625, 'box': [274.27886962890625, 309.18255615234375, 640.0, 479.98358154296875]}
+
+=== Approach Finished ===
+Final agent position: {'x': -1.25, 'y': 0.902314305305481, 'z': 0.75}
+Final distance to estimated target: 0.846
+Final YOLO status: valid
+Final YOLO target detection: {'label': 'laptop', 'score': 0.33571889996528625, 'box': [274.27886962890625, 309.18255615234375, 640.0, 479.98358154296875]}
+
+========== Summary ==========
+scene: FloorPlan204
+target: laptop
+resolved_target: laptop
+success: True
+visited_belief_goals: 4
+visited_reachable_points: 1
+total_actions: 73
+num_context_objects: 34
+anchor_searches: 5
+searched_anchors: 5
+save_dir: outputs/batch_spub_20260529_165941/FloorPlan204_laptop
+log_path: outputs/batch_spub_20260529_165941/FloorPlan204_laptop/run.log

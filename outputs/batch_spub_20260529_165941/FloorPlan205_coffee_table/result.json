@@ -1,0 +1,14 @@
+{
+  "scene": "FloorPlan205",
+  "target": "coffee table",
+  "resolved_target": "coffee table",
+  "success": false,
+  "visited_belief_goals": 1,
+  "visited_reachable_points": 3,
+  "total_actions": 72,
+  "num_context_objects": 31,
+  "anchor_searches": 0,
+  "searched_anchors": 0,
+  "save_dir": "outputs/batch_spub_20260529_165941/FloorPlan205_coffee_table",
+  "log_path": "outputs/batch_spub_20260529_165941/FloorPlan205_coffee_table/run.log"
+}

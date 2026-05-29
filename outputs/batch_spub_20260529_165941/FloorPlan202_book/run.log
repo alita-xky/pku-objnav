@@ -1,0 +1,118 @@
+
+=== Scene ===
+FloorPlan202
+
+=== Target Query ===
+book
+
+=== Resolved Target Prompt ===
+book
+
+=== Debug Force Search ===
+False
+
+=== Contexts From Semantic Prior ===
+laptop               score=0.794
+drawer               score=0.793
+window               score=0.739
+desk                 score=0.724
+desk lamp            score=0.714
+chair                score=0.710
+shelf                score=0.683
+pillow               score=0.663
+
+=== YOLO Classes ===
+['arm chair', 'book', 'box', 'chair', 'coffee table', 'couch', 'desk', 'desk lamp', 'dining table', 'drawer', 'floor lamp', 'house plant', 'lamp', 'laptop', 'monitor', 'newspaper', 'pen', 'pencil', 'pillow', 'plant', 'remote control', 'shelf', 'side table', 'sofa', 'table', 'television', 'tv', 'tv stand', 'window']
+CloudRendering failed, trying normal rendering.
+Reason: Exception('The following builds were found, but had missing dependencies. Only one valid platform is required to run AI2-THOR.\nPlatform CloudRendering failed validation with the following errors: Vulkan API driver missing.\n  CloudRendering requires libvulkan1. Please install by running: sudo apt-get -y install libvulkan1')
+
+=== Initial Pose ===
+{'position': {'x': -0.5, 'y': 0.9010459184646606, 'z': 1.75}, 'rotation': {'x': 0.0, 'y': 270.0, 'z': 0.0}, 'camera_horizon': -0.0}
+
+Number of reachable positions: 180
+
+========== Initial YOLO Observation ==========
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.794, anchor=0.75, effective_prior=0.595, score=0.950
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.714, anchor=0.30, effective_prior=0.214, score=0.881
+[Context detected] label=lamp, matched_context=desk lamp, raw_prior=0.714, anchor=0.30, effective_prior=0.214, score=0.674
+[Target check] target_query=book, target_prompt=book, status=not_detected, det=None
+Observe rotation 0:
+YOLO detections: [('sofa', 0.967, [0.0, 286.3, 222.3, 480.0]), ('laptop', 0.95, [103.5, 336.4, 177.8, 393.6]), ('lamp', 0.881, [575.9, 168.8, 640.0, 459.9]), ('floor lamp', 0.714, [574.1, 169.0, 639.7, 462.9]), ('lamp', 0.674, [575.8, 168.8, 640.0, 284.9]), ('house plant', 0.603, [413.5, 337.9, 548.4, 480.0]), ('side table', 0.32, [0.2, 415.1, 143.0, 480.0]), ('tv stand', 0.3, [0.0, 415.1, 143.2, 480.0]), ('sofa', 0.21, [0.0, 412.6, 144.7, 479.8]), ('sofa', 0.149, [178.1, 425.9, 639.1, 480.0]), ('pillow', 0.132, [0.0, 314.9, 35.9, 377.9])]
+Target status: not_detected
+[Context detected] label=shelf, matched_context=shelf, raw_prior=0.683, anchor=1.20, effective_prior=0.819, score=0.766
+[Context detected] label=desk, matched_context=desk, raw_prior=0.724, anchor=1.20, effective_prior=0.869, score=0.759
+[Target check] target_query=book, target_prompt=book, status=valid, det={'label': 'book', 'score': 0.41137179732322693, 'box': [0.025669097900390625, 412.7295837402344, 43.27699661254883, 451.1261901855469]}
+Observe rotation 1:
+YOLO detections: [('tv', 0.931, [31.8, 241.2, 250.8, 402.4]), ('shelf', 0.766, [0.0, 387.6, 243.6, 480.0]), ('desk', 0.759, [0.0, 387.2, 244.4, 479.9]), ('book', 0.411, [0.0, 412.7, 43.3, 451.1]), ('book', 0.177, [0.0, 412.4, 43.3, 471.3])]
+Target status: valid
+[Target check] target_query=book, target_prompt=book, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: [('tv stand', 0.179, [595.6, 456.4, 640.0, 480.0])]
+Target status: not_detected
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.663, anchor=0.75, effective_prior=0.497, score=0.493
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.663, anchor=0.75, effective_prior=0.497, score=0.254
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.663, anchor=0.75, effective_prior=0.497, score=0.198
+[Target check] target_query=book, target_prompt=book, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('sofa', 0.878, [4.8, 360.7, 640.0, 480.0]), ('box', 0.554, [0.0, 387.4, 181.4, 480.0]), ('pillow', 0.493, [212.7, 361.4, 495.8, 479.9]), ('sofa', 0.37, [77.1, 360.8, 517.9, 480.0]), ('pillow', 0.254, [481.8, 362.2, 640.0, 480.0]), ('pillow', 0.198, [228.4, 470.0, 424.1, 480.0])]
+Target status: not_detected
+Stable target position from multi-view YOLO-depth: {'x': -1.5049999170079469, 'y': 0.9010459184646606, 'z': 3.6129682064056396, 'depth': 1.8629682064056396}
+Best target detection: {'label': 'book', 'score': 0.41137179732322693, 'box': [0.025669097900390625, 412.7295837402344, 43.27699661254883, 451.1261901855469]}
+Initial observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.595196780712958, 'score': 0.9496384859085083, 'position': {'x': -3.333341121673584, 'y': 0.9010459184646606, 'z': 0.8298454791413422}, 'count': 1}
+{'label': 'lamp', 'matched_context': 'desk lamp', 'prior_weight': 0.2142948229987084, 'score': 0.8813877701759338, 'position': {'x': -3.99826455116272, 'y': 0.9010459184646606, 'z': 3.5614399448408185}, 'count': 2}
+{'label': 'shelf', 'matched_context': 'shelf', 'prior_weight': 0.8190334374443393, 'score': 0.7657216787338257, 'position': {'x': -1.1774853426307121, 'y': 0.9010459184646606, 'z': 3.636937141418457}, 'count': 1}
+{'label': 'desk', 'matched_context': 'desk', 'prior_weight': 0.8689788959383109, 'score': 0.7589254379272461, 'position': {'x': -1.17408123435907, 'y': 0.9010459184646606, 'z': 3.6369380950927734}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.49711985763603495, 'score': 0.49299073219299316, 'position': {'x': -0.7469419430081903, 'y': 0.9010459184646606, 'z': 0.31804847717285156}, 'count': 3}
+
+Top belief nodes:
+  0: pos={'x': -0.75, 'y': 0.9010459184646606, 'z': 3.5}, belief=0.560, context=0.560, uncertainty=1.000, negative=0.0
+  1: pos={'x': -1.75, 'y': 0.9010459184646606, 'z': 3.0}, belief=0.488, context=0.488, uncertainty=1.000, negative=0.0
+  2: pos={'x': -2.0, 'y': 0.9010459184646606, 'z': 3.0}, belief=0.456, context=0.456, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9010459184646606, 'z': 3.5}, belief=0.436, context=0.436, uncertainty=1.000, negative=0.0
+  4: pos={'x': -2.25, 'y': 0.9010459184646606, 'z': 3.0}, belief=0.425, context=0.425, uncertainty=1.000, negative=0.0
+  5: pos={'x': -2.5, 'y': 0.9010459184646606, 'z': 3.5}, belief=0.402, context=0.402, uncertainty=1.000, negative=0.0
+  6: pos={'x': -2.5, 'y': 0.9010459184646606, 'z': 3.25}, belief=0.402, context=0.402, uncertainty=1.000, negative=0.0
+  7: pos={'x': -2.5, 'y': 0.9010459184646606, 'z': 3.0}, belief=0.396, context=0.396, uncertainty=1.000, negative=0.0
+  8: pos={'x': -2.5, 'y': 0.9010459184646606, 'z': 3.75}, belief=0.395, context=0.395, uncertainty=1.000, negative=0.0
+  9: pos={'x': -3.25, 'y': 0.9010459184646606, 'z': 1.25}, belief=0.392, context=0.392, uncertainty=1.000, negative=0.0
+
+YOLO found stable target at initial area. Now approaching target...
+
+=== Approach Target ===
+Stable estimated target position: {'x': -1.5049999170079469, 'y': 0.9010459184646606, 'z': 3.6129682064056396, 'depth': 1.8629682064056396}
+Selected approach goal: {'x': -0.75, 'y': 0.9010459184646606, 'z': 3.25}
+Goal distance to estimated target: 0.838
+Approach actions: ['MoveAhead', 'RotateRight', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Number of approach actions: 8
+Approach action 0: MoveAhead, success=True
+Approach action 1: RotateRight, success=True
+Approach action 2: MoveAhead, success=True
+Approach action 3: MoveAhead, success=True
+Approach action 4: MoveAhead, success=True
+Approach action 5: MoveAhead, success=True
+Approach action 6: MoveAhead, success=True
+Approach action 7: MoveAhead, success=True
+Face target action 0: RotateLeft, success=True
+Final verify 0, action=None, status=not_detected, det=None
+Final verify 1, action=LookDown, status=valid, det={'label': 'book', 'score': 0.479218065738678, 'box': [378.96209716796875, 258.849853515625, 472.13250732421875, 305.02294921875]}
+
+=== Approach Finished ===
+Final agent position: {'x': -0.75, 'y': 0.9010459184646606, 'z': 3.25}
+Final distance to estimated target: 0.838
+Final YOLO status: valid
+Final YOLO target detection: {'label': 'book', 'score': 0.479218065738678, 'box': [378.96209716796875, 258.849853515625, 472.13250732421875, 305.02294921875]}
+
+========== Summary ==========
+scene: FloorPlan202
+target: book
+resolved_target: book
+success: True
+visited_belief_goals: 0
+visited_reachable_points: 1
+total_actions: 14
+num_context_objects: 5
+anchor_searches: 0
+searched_anchors: 0
+save_dir: outputs/batch_spub_20260529_165941/FloorPlan202_book
+log_path: outputs/batch_spub_20260529_165941/FloorPlan202_book/run.log

@@ -1,0 +1,567 @@
+
+=== Scene ===
+FloorPlan203
+
+=== Target Query ===
+remote control
+
+=== Resolved Target Prompt ===
+remote control
+
+=== Debug Force Search ===
+False
+
+=== Contexts From Semantic Prior ===
+tv                   score=0.836
+sofa                 score=0.829
+laptop               score=0.784
+pillow               score=0.766
+coffee table         score=0.765
+house plant          score=0.742
+arm chair            score=0.737
+box                  score=0.721
+
+=== YOLO Classes ===
+['arm chair', 'book', 'box', 'chair', 'coffee table', 'couch', 'desk', 'desk lamp', 'dining table', 'floor lamp', 'house plant', 'lamp', 'laptop', 'monitor', 'newspaper', 'pen', 'pencil', 'pillow', 'plant', 'remote control', 'side table', 'sofa', 'table', 'television', 'tv', 'tv stand']
+CloudRendering failed, trying normal rendering.
+Reason: Exception('The following builds were found, but had missing dependencies. Only one valid platform is required to run AI2-THOR.\nPlatform CloudRendering failed validation with the following errors: Vulkan API driver missing.\n  CloudRendering requires libvulkan1. Please install by running: sudo apt-get -y install libvulkan1')
+
+=== Initial Pose ===
+{'position': {'x': -3.0, 'y': 0.9070531129837036, 'z': 2.75}, 'rotation': {'x': -0.0, 'y': 90.0, 'z': 0.0}, 'camera_horizon': -0.0}
+
+Number of reachable positions: 593
+
+========== Initial YOLO Observation ==========
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.784, anchor=0.65, effective_prior=0.510, score=0.927
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.880
+[Context detected] label=coffee table, matched_context=coffee table, raw_prior=0.765, anchor=1.20, effective_prior=0.918, score=0.873
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.821
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.775
+[Context detected] label=couch, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.767
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.753
+[Context detected] label=television, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.665
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.489
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.389
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.360
+[Context detected] label=television, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.313
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.280
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.276
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.219
+[Context detected] label=couch, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.196
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Observe rotation 0:
+YOLO detections: [('laptop', 0.927, [283.6, 327.0, 337.1, 374.3]), ('sofa', 0.88, [0.0, 319.7, 133.2, 478.4]), ('coffee table', 0.873, [77.1, 362.7, 181.4, 428.7]), ('tv', 0.821, [277.4, 194.1, 396.9, 266.1]), ('pillow', 0.775, [0.0, 328.8, 70.0, 376.5]), ('couch', 0.767, [0.0, 317.2, 133.1, 478.1]), ('sofa', 0.753, [34.3, 390.8, 640.0, 479.9]), ('television', 0.665, [277.8, 194.1, 396.6, 264.6]), ('pillow', 0.489, [3.3, 391.5, 170.3, 480.0]), ('book', 0.436, [108.7, 369.6, 154.7, 388.4]), ('side table', 0.426, [260.6, 352.6, 417.3, 448.6]), ('desk', 0.398, [261.0, 352.6, 417.2, 448.0]), ('sofa', 0.389, [0.0, 391.0, 465.2, 480.0]), ('tv stand', 0.385, [262.2, 353.2, 416.5, 448.3]), ('pillow', 0.36, [528.4, 390.6, 640.0, 479.9]), ('television', 0.313, [296.8, 327.1, 336.9, 373.2]), ('pillow', 0.28, [0.0, 312.7, 44.4, 365.1]), ('sofa', 0.276, [325.8, 391.0, 639.9, 480.0]), ('pillow', 0.219, [0.0, 313.4, 45.7, 346.3]), ('couch', 0.196, [1.1, 397.0, 594.5, 479.9])]
+Target status: not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.749
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.745
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.733
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.398
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.196
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.185
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Observe rotation 1:
+YOLO detections: [('lamp', 0.931, [447.9, 111.8, 539.7, 218.4]), ('chair', 0.749, [344.8, 312.0, 411.4, 467.8]), ('chair', 0.745, [435.0, 329.2, 523.8, 480.0]), ('chair', 0.733, [536.8, 327.0, 640.0, 480.0]), ('dining table', 0.642, [382.4, 333.4, 633.0, 479.1]), ('tv stand', 0.534, [0.0, 345.4, 82.5, 480.0]), ('chair', 0.398, [542.2, 305.4, 631.7, 459.3]), ('side table', 0.258, [473.3, 299.2, 510.6, 334.1]), ('book', 0.257, [450.5, 351.7, 494.7, 363.8]), ('book', 0.204, [392.2, 333.8, 426.0, 344.0]), ('chair', 0.196, [525.0, 301.3, 571.6, 418.8]), ('chair', 0.185, [458.2, 303.6, 525.1, 432.6]), ('floor lamp', 0.183, [400.8, 299.7, 438.5, 335.3]), ('arm chair', 0.171, [431.2, 308.6, 463.3, 334.2]), ('arm chair', 0.169, [531.7, 303.0, 569.8, 334.9]), ('chair', 0.125, [541.4, 341.6, 622.3, 445.8])]
+Target status: not_detected
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Observe rotation 2:
+YOLO detections: [('desk', 0.165, [0.4, 428.3, 368.2, 480.0])]
+Target status: not_detected
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Observe rotation 3:
+YOLO detections: [('side table', 0.191, [0.0, 270.5, 80.9, 480.0]), ('chair', 0.166, [0.0, 272.1, 81.4, 480.0])]
+Target status: not_detected
+Initial observed context objects:
+{'label': 'laptop', 'matched_context': 'laptop', 'prior_weight': 0.5096966051618654, 'score': 0.9267258048057556, 'position': {'x': 0.5151786804199219, 'y': 0.9070531129837036, 'z': 2.81342154241844}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9118497547452656, 'score': 0.8797455430030823, 'position': {'x': 0.06474542617797852, 'y': 0.9070531129837036, 'z': 4.154486329961214}, 'count': 2}
+{'label': 'coffee table', 'matched_context': 'coffee table', 'prior_weight': 0.9175397156658307, 'score': 0.8728739023208618, 'position': {'x': 0.18933701515197754, 'y': 0.9070531129837036, 'z': 3.8490644862149264}, 'count': 1}
+{'label': 'tv', 'matched_context': 'tv', 'prior_weight': 0.6272727272727272, 'score': 0.8205867409706116, 'position': {'x': 1.4598455429077148, 'y': 0.9070531129837036, 'z': 2.6212553487629044}, 'count': 2}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.49787842334368365, 'score': 0.7754722833633423, 'position': {'x': 0.4415593942006429, 'y': 0.9070531129837036, 'z': 4.576226893611386}, 'count': 3}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9118497547452656, 'score': 0.7527475953102112, 'position': {'x': 0.06262294451395671, 'y': 0.9070531129837036, 'z': 2.9249787081234366}, 'count': 3}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.49787842334368365, 'score': 0.4893014132976532, 'position': {'x': -1.0539419651031494, 'y': 0.9070531129837036, 'z': 3.571601151536504}, 'count': 1}
+{'label': 'pillow', 'matched_context': 'pillow', 'prior_weight': 0.49787842334368365, 'score': 0.3595832884311676, 'position': {'x': -0.9916446208953857, 'y': 0.9070531129837036, 'z': 1.7970157861486606}, 'count': 1}
+{'label': 'television', 'matched_context': 'tv', 'prior_weight': 0.6272727272727272, 'score': 0.31262630224227905, 'position': {'x': 0.4896237850189209, 'y': 0.9070531129837036, 'z': 2.77518419039564}, 'count': 1}
+{'label': 'sofa', 'matched_context': 'sofa', 'prior_weight': 0.9118497547452656, 'score': 0.2764953076839447, 'position': {'x': 0.0633859634399414, 'y': 0.9070531129837036, 'z': 1.8546226027467163}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.8109194621561909, 'score': 0.7492809891700745, 'position': {'x': -3.3652468813266645, 'y': 0.9070531129837036, 'z': -0.8015854358673096}, 'count': 1}
+{'label': 'chair', 'matched_context': 'arm chair', 'prior_weight': 0.8109194621561909, 'score': 0.7447841167449951, 'position': {'x': -4.102506467188966, 'y': 0.9070531129837036, 'z': -0.05050077438354492}, 'count': 5}
+
+Top belief nodes:
+  0: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.922, context=0.922, uncertainty=1.000, negative=0.0
+  1: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.917, context=0.917, uncertainty=1.000, negative=0.0
+  2: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.914, context=0.914, uncertainty=1.000, negative=0.0
+  3: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.911, context=0.911, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.903, context=0.903, uncertainty=1.000, negative=0.0
+  5: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.901, context=0.901, uncertainty=1.000, negative=0.0
+  6: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.895, context=0.895, uncertainty=1.000, negative=0.0
+  7: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 4.0}, belief=0.894, context=0.894, uncertainty=1.000, negative=0.0
+  8: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.893, context=0.893, uncertainty=1.000, negative=0.0
+  9: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.25}, belief=0.892, context=0.892, uncertainty=1.000, negative=0.0
+
+Top belief nodes:
+  0: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.922, context=0.922, uncertainty=1.000, negative=0.0
+  1: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.917, context=0.917, uncertainty=1.000, negative=0.0
+  2: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.914, context=0.914, uncertainty=1.000, negative=0.0
+  3: pos={'x': 0.0, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.911, context=0.911, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.5, 'y': 0.9070531129837036, 'z': 3.75}, belief=0.903, context=0.903, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'arm chair', 'anchor_position': {'x': -4.102506467188966, 'y': 0.9070531129837036, 'z': -0.05050077438354492}, 'view_goal': {'x': -3.5, 'y': 0.9070531129837036, 'z': 1.0}, 'semantic_score': 0.6039599353733252, 'path_cost': 12, 'score': 3.3916794829866013}
+
+=== Semantic Anchor Local Search ===
+Anchor: arm chair
+Anchor position: {'x': -4.102506467188966, 'y': 0.9070531129837036, 'z': -0.05050077438354492}
+Selected anchor view goal: {'x': -3.5, 'y': 0.9070531129837036, 'z': 1.0}
+Distance to anchor: 1.211
+Anchor approach actions: ['RotateRight', 'RotateRight', 'MoveAhead', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead', 'MoveAhead']
+Anchor approach action 0: RotateRight, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.749
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.745
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.733
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.398
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.196
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.185
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 1: RotateRight, success=True
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 2: MoveAhead, success=True
+[Context detected] label=box, matched_context=box, raw_prior=0.721, anchor=0.25, effective_prior=0.180, score=0.315
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 3: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.339
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 4: RotateLeft, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.758
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.747
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.409
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.251
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 5: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.761
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.688
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.686
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.355
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.323
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.293
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 6: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.767
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.752
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.749
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.490
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.269
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.258
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.218
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 7: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.730
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.667
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.547
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.447
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.368
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.366
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.354
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.320
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.257
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 8: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.614
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.564
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.480
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.460
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.450
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.360
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.322
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.322
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.293
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.274
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.209
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.205
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.203
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.182
+[Target check] target_query=remote control, target_prompt=remote control, status=valid, det={'label': 'remote control', 'score': 0.1963583528995514, 'box': [360.87139892578125, 415.6639404296875, 393.33026123046875, 434.6207275390625]}
+Anchor move-time target status: valid
+Anchor approach action 9: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.817
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.754
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.683
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.488
+[Target check] target_query=remote control, target_prompt=remote control, status=valid, det={'label': 'remote control', 'score': 0.31645217537879944, 'box': [366.4540100097656, 442.2542419433594, 405.0826721191406, 465.5289001464844]}
+Anchor move-time target status: valid
+Anchor approach action 10: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.777
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.615
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.397
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.266
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 11: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.790
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.725
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.376
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.222
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.183
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.790
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.725
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.376
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.222
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.183
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.883
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.777
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.722
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.669
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.635
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.515
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.292
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.238
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.191
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.868
+[Context detected] label=box, matched_context=box, raw_prior=0.721, anchor=0.25, effective_prior=0.180, score=0.376
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.273
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.766
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.221
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.207
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.897
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.697
+[Context detected] label=television, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.647
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.621
+[Context detected] label=coffee table, matched_context=coffee table, raw_prior=0.765, anchor=1.20, effective_prior=0.918, score=0.614
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.467
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.742, anchor=0.25, effective_prior=0.186, score=0.434
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.283
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.784, anchor=0.65, effective_prior=0.510, score=0.256
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.225
+[Context detected] label=box, matched_context=box, raw_prior=0.721, anchor=0.25, effective_prior=0.180, score=0.212
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.206
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.902
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.746
+[Context detected] label=coffee table, matched_context=coffee table, raw_prior=0.765, anchor=1.20, effective_prior=0.918, score=0.667
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.445
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.742, anchor=0.25, effective_prior=0.186, score=0.365
+[Context detected] label=box, matched_context=box, raw_prior=0.721, anchor=0.25, effective_prior=0.180, score=0.356
+[Context detected] label=pillow, matched_context=pillow, raw_prior=0.766, anchor=0.65, effective_prior=0.498, score=0.342
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 5, action=LookUp, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.790
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.725
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.376
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.222
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.183
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.883
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.777
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.722
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.669
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.635
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.515
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.292
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.238
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.191
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.975, context=0.975, uncertainty=1.000, negative=0.0
+  1: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.974, context=0.974, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.973, context=0.973, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.25}, belief=0.972, context=0.972, uncertainty=1.000, negative=0.0
+  4: pos={'x': 0.25, 'y': 0.9070531129837036, 'z': 3.5}, belief=0.970, context=0.970, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'arm chair', 'anchor_position': {'x': -3.5091394102765725, 'y': 0.9070531129837036, 'z': -0.5216120691860424}, 'view_goal': {'x': -3.5, 'y': 0.9070531129837036, 'z': 0.75}, 'semantic_score': 0.7159304387206082, 'path_cost': 1, 'score': 5.607443509764866}
+
+=== Semantic Anchor Local Search ===
+Anchor: arm chair
+Anchor position: {'x': -3.5091394102765725, 'y': 0.9070531129837036, 'z': -0.5216120691860424}
+Selected anchor view goal: {'x': -3.5, 'y': 0.9070531129837036, 'z': 0.75}
+Distance to anchor: 1.272
+Anchor approach actions: ['MoveAhead']
+Anchor approach action 0: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.794
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.748
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.696
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.426
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.212
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.12423250079154968, 'box': [384.6016845703125, 323.3126525878906, 440.02508544921875, 367.1364440917969]}
+Anchor move-time target status: too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.794
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.748
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.696
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.426
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.212
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.12423250079154968, 'box': [384.6016845703125, 323.3126525878906, 440.02508544921875, 367.1364440917969]}
+Anchor local search 0, action=None, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.600
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.249
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.161243736743927, 'box': [386.69671630859375, 99.67141723632812, 439.73907470703125, 144.1040496826172]}
+Anchor local search 1, action=LookDown, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.617
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.418
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.193
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 4, action=RotateRight, target status=not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.915
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.784, anchor=0.65, effective_prior=0.510, score=0.569
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.373
+[Context detected] label=television, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.373
+[Context detected] label=arm chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.283
+[Context detected] label=house plant, matched_context=house plant, raw_prior=0.742, anchor=0.25, effective_prior=0.186, score=0.216
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.784, anchor=0.65, effective_prior=0.510, score=0.204
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 5, action=LookUp, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.794
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.748
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.696
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.426
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.212
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.12423250079154968, 'box': [384.6016845703125, 323.3126525878906, 440.02508544921875, 367.1364440917969]}
+Anchor local search 6, action=RotateRight, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.600
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.249
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.161243736743927, 'box': [386.69671630859375, 99.67141723632812, 439.73907470703125, 144.1040496826172]}
+Anchor local search 7, action=LookDown, target status=too_small_or_low_conf
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.979, context=0.979, uncertainty=1.000, negative=0.0
+  1: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.979, context=0.979, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.25}, belief=0.978, context=0.978, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.977, context=0.977, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.0}, belief=0.975, context=0.975, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'arm chair', 'anchor_position': {'x': -5.036044269800186, 'y': 0.9070531129837036, 'z': 0.27916323689159955}, 'view_goal': {'x': -4.0, 'y': 0.9070531129837036, 'z': 0.75}, 'semantic_score': 0.7038192463968952, 'path_cost': 3, 'score': 5.270553971175161}
+
+=== Semantic Anchor Local Search ===
+Anchor: arm chair
+Anchor position: {'x': -5.036044269800186, 'y': 0.9070531129837036, 'z': 0.27916323689159955}
+Selected anchor view goal: {'x': -4.0, 'y': 0.9070531129837036, 'z': 0.75}
+Distance to anchor: 1.138
+Anchor approach actions: ['RotateRight', 'MoveAhead', 'MoveAhead']
+Anchor approach action 0: RotateRight, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.617
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.418
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 1: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.681
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.185
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.181
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 2: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.191
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.366
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.278
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.233
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.394
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.237
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.15156379342079163, 'box': [207.1014404296875, 99.85862731933594, 252.4241943359375, 144.34695434570312]}
+Anchor local search 4, action=RotateRight, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.884
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.771
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.635
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.480
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.241
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.189
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.15262924134731293, 'box': [209.10952758789062, 323.2623291015625, 251.17074584960938, 366.80377197265625]}
+Anchor local search 5, action=LookUp, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.426
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.331
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.286
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.980, context=0.980, uncertainty=1.000, negative=0.0
+  1: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.980, context=0.980, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.25}, belief=0.979, context=0.979, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.978, context=0.978, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.0}, belief=0.977, context=0.977, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'arm chair', 'anchor_position': {'x': -5.109832972288132, 'y': 0.9070531129837036, 'z': 0.2932167128724592}, 'view_goal': {'x': -4.0, 'y': 0.9070531129837036, 'z': 0.75}, 'semantic_score': 0.7038192463968952, 'path_cost': 0, 'score': 5.6305539711751615}
+
+=== Semantic Anchor Local Search ===
+Anchor: arm chair
+Anchor position: {'x': -5.109832972288132, 'y': 0.9070531129837036, 'z': 0.2932167128724592}
+Selected anchor view goal: {'x': -4.0, 'y': 0.9070531129837036, 'z': 0.75}
+Distance to anchor: 1.2
+Anchor approach actions: []
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.191
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 2, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.366
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.278
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.233
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 3, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.394
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.237
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.15156379342079163, 'box': [207.1014404296875, 99.85862731933594, 252.4241943359375, 144.34695434570312]}
+Anchor local search 4, action=RotateRight, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.884
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.771
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.635
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.480
+[Context detected] label=tv, matched_context=tv, raw_prior=0.836, anchor=0.75, effective_prior=0.627, score=0.241
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.189
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.15262924134731293, 'box': [209.10952758789062, 323.2623291015625, 251.17074584960938, 366.80377197265625]}
+Anchor local search 5, action=LookUp, target status=too_small_or_low_conf
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.426
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.331
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.286
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 6, action=RotateRight, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.864
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 7, action=LookDown, target status=not_detected
+Anchor search failed.
+
+Top belief nodes:
+  0: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.5}, belief=0.980, context=0.980, uncertainty=1.000, negative=0.0
+  1: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.75}, belief=0.980, context=0.980, uncertainty=1.000, negative=0.0
+  2: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.25}, belief=0.980, context=0.980, uncertainty=1.000, negative=0.0
+  3: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 3.0}, belief=0.978, context=0.978, uncertainty=1.000, negative=0.0
+  4: pos={'x': -0.25, 'y': 0.9070531129837036, 'z': 2.0}, belief=0.977, context=0.977, uncertainty=1.000, negative=0.0
+
+========== Anchor Search ==========
+Anchor info: {'anchor': 'arm chair', 'anchor_position': {'x': -3.5756810129042167, 'y': 0.9070531129837036, 'z': -0.5646162430445354}, 'view_goal': {'x': -3.0, 'y': 0.9070531129837036, 'z': 0.5}, 'semantic_score': 0.7172134314533402, 'path_cost': 9, 'score': 4.657707451626721}
+
+=== Semantic Anchor Local Search ===
+Anchor: arm chair
+Anchor position: {'x': -3.5756810129042167, 'y': 0.9070531129837036, 'z': -0.5646162430445354}
+Selected anchor view goal: {'x': -3.0, 'y': 0.9070531129837036, 'z': 0.5}
+Distance to anchor: 1.21
+Anchor approach actions: ['RotateRight', 'RotateRight', 'MoveAhead', 'MoveAhead', 'RotateRight', 'MoveAhead', 'RotateLeft', 'MoveAhead', 'MoveAhead']
+Anchor approach action 0: RotateRight, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.191
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 1: RotateRight, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.366
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.278
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.233
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 2: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.283
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 3: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.193
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 4: RotateRight, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.600
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.249
+[Target check] target_query=remote control, target_prompt=remote control, status=too_small_or_low_conf, det={'label': 'remote control', 'score': 0.161243736743927, 'box': [386.69671630859375, 99.67141723632812, 439.73907470703125, 144.1040496826172]}
+Anchor move-time target status: too_small_or_low_conf
+Anchor approach action 5: MoveAhead, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.276
+[Context detected] label=laptop, matched_context=laptop, raw_prior=0.784, anchor=0.65, effective_prior=0.510, score=0.193
+[Target check] target_query=remote control, target_prompt=remote control, status=valid, det={'label': 'remote control', 'score': 0.21898873150348663, 'box': [394.60699462890625, 169.32473754882812, 454.21051025390625, 225.66928100585938]}
+Anchor move-time target status: valid
+Anchor approach action 6: RotateLeft, success=True
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 7: MoveAhead, success=True
+[Context detected] label=sofa, matched_context=sofa, raw_prior=0.829, anchor=1.10, effective_prior=0.912, score=0.182
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Anchor approach action 8: MoveAhead, success=True
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor move-time target status: not_detected
+Face target action 0: RotateRight, success=True
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.322
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 0, action=None, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.322
+[Target check] target_query=remote control, target_prompt=remote control, status=not_detected, det=None
+Anchor local search 1, action=LookDown, target status=not_detected
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.519
+[Context detected] label=chair, matched_context=arm chair, raw_prior=0.737, anchor=1.10, effective_prior=0.811, score=0.414
+[Target check] target_query=remote control, target_prompt=remote control, status=valid, det={'label': 'remote control', 'score': 0.7078062295913696, 'box': [60.1223030090332, 127.671875, 123.43818664550781, 168.0762939453125]}
+Anchor local search 2, action=RotateRight, target status=valid
+Anchor search found target.
+Stable target position: {'x': -3.8852081435439407, 'y': 0.9070531129837036, 'z': -0.2253472666996983, 'depth': 1.042853832244873}
+
+Anchor search found target. Now approaching target...
+
+=== Approach Target ===
+Stable estimated target position: {'x': -3.8852081435439407, 'y': 0.9070531129837036, 'z': -0.2253472666996983, 'depth': 1.042853832244873}
+Selected approach goal: {'x': -3.5, 'y': 0.9070531129837036, 'z': 0.5}
+Goal distance to estimated target: 0.821
+Approach actions: ['MoveAhead', 'MoveAhead']
+Number of approach actions: 2
+Approach action 0: MoveAhead, success=True
+Approach action 1: MoveAhead, success=True
+Face target action 0: RotateLeft, success=True
+Final verify 0, action=None, status=valid, det={'label': 'remote control', 'score': 0.21898873150348663, 'box': [394.60699462890625, 169.32473754882812, 454.21051025390625, 225.66928100585938]}
+
+=== Approach Finished ===
+Final agent position: {'x': -3.5, 'y': 0.9070531129837036, 'z': 0.5}
+Final distance to estimated target: 0.821
+Final YOLO status: valid
+Final YOLO target detection: {'label': 'remote control', 'score': 0.21898873150348663, 'box': [394.60699462890625, 169.32473754882812, 454.21051025390625, 225.66928100585938]}
+
+========== Summary ==========
+scene: FloorPlan203
+target: remote control
+resolved_target: remote control
+success: True
+visited_belief_goals: 4
+visited_reachable_points: 1
+total_actions: 63
+num_context_objects: 40
+anchor_searches: 5
+searched_anchors: 5
+save_dir: outputs/batch_spub_20260529_165941/FloorPlan203_remote_control
+log_path: outputs/batch_spub_20260529_165941/FloorPlan203_remote_control/run.log

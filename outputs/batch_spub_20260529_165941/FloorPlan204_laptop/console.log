@@ -1,0 +1,3 @@
+[DONE] scene=FloorPlan204, target=laptop, success=True, actions=73, goals=4, anchors=5, contexts=34
+       save_dir=outputs/batch_spub_20260529_165941/FloorPlan204_laptop
+       log=outputs/batch_spub_20260529_165941/FloorPlan204_laptop/run.log

@@ -1,0 +1,14 @@
+{
+  "scene": "FloorPlan202",
+  "target": "laptop",
+  "resolved_target": "laptop",
+  "success": true,
+  "visited_belief_goals": 0,
+  "visited_reachable_points": 1,
+  "total_actions": 16,
+  "num_context_objects": 4,
+  "anchor_searches": 0,
+  "searched_anchors": 0,
+  "save_dir": "outputs/batch_spub_20260529_165941/FloorPlan202_laptop",
+  "log_path": "outputs/batch_spub_20260529_165941/FloorPlan202_laptop/run.log"
+}

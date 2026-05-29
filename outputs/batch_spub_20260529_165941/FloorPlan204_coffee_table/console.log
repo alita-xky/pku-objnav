@@ -1,0 +1,3 @@
+[DONE] scene=FloorPlan204, target=coffee table, success=False, actions=94, goals=2, anchors=0, contexts=48
+       save_dir=outputs/batch_spub_20260529_165941/FloorPlan204_coffee_table
+       log=outputs/batch_spub_20260529_165941/FloorPlan204_coffee_table/run.log
