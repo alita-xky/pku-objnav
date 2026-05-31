@@ -119,78 +119,37 @@ def save_trajectory_csv(trajectory, path):
 # ============================================================
 # Context priors
 # ============================================================
+#
+# The 8-class hardcoded prior that originally lived here has been moved into
+# prior_backend.HARDCODED_CONTEXT_PRIOR. The default is now the PMI-based
+# prior built by build_ai2thor_prior.py (richer coverage, ~100 categories,
+# the same statistics the rest of the code already loads to pick YOLO classes).
+#
+# Backend can be switched at runtime:
+#     PRIOR_BACKEND=hardcoded python run_yolo_bayes_approach.py
+#     PRIOR_BACKEND=pmi       python run_yolo_bayes_approach.py   # default
 
-CONTEXT_PRIOR = {
-    "pencil": {
-        "pen": 1.0,
-        "dining table": 0.9,
-        "desk": 0.9,
-        "book": 0.5,
-        "newspaper": 0.5,
-        "laptop": 0.4,
-    },
-    "pen": {
-        "pencil": 1.0,
-        "dining table": 0.9,
-        "desk": 0.9,
-        "book": 0.5,
-        "newspaper": 0.5,
-    },
-    "remotecontrol": {
-        "sofa": 1.0,
-        "couch": 1.0,
-        "tv": 0.9,
-        "television": 0.9,
-        "coffee table": 0.8,
-        "tv stand": 0.7,
-    },
-    "book": {
-        "shelf": 1.0,
-        "desk": 0.8,
-        "dining table": 0.6,
-        "coffee table": 0.6,
-        "sofa": 0.4,
-        "couch": 0.4,
-    },
-    "laptop": {
-        "desk": 1.0,
-        "dining table": 0.8,
-        "chair": 0.5,
-    },
-    "mug": {
-        "dining table": 1.0,
-        "coffee table": 0.9,
-        "side table": 0.7,
-        "desk": 0.7,
-    },
-    "sofa": {
-        "tv": 0.9,
-        "television": 0.9,
-        "coffee table": 0.8,
-        "remote control": 0.7,
-        "pillow": 0.6,
-    },
-    "tv": {
-        "sofa": 0.9,
-        "couch": 0.9,
-        "coffee table": 0.7,
-        "tv stand": 1.0,
-    },
-}
+import os
+
+from prior_backend import make_prior
+
+_PRIOR_BACKEND_NAME = os.environ.get("PRIOR_BACKEND", "pmi")
+try:
+    _PRIOR = make_prior(_PRIOR_BACKEND_NAME)
+except Exception as _e:
+    print(f"[prior_backend] {_PRIOR_BACKEND_NAME} failed ({_e!r}); "
+          f"falling back to hardcoded")
+    _PRIOR = make_prior("hardcoded")
+
+print(f"[prior_backend] active = {_PRIOR.name}")
 
 
 def get_context_prompts(target_prompt: str) -> List[str]:
-    return list(CONTEXT_PRIOR.get(norm_label(target_prompt), {}).keys())
+    return _PRIOR.get_context_prompts(target_prompt)
 
 
 def get_context_weight(target_prompt: str, object_prompt: str) -> float:
-    table = CONTEXT_PRIOR.get(norm_label(target_prompt), {})
-
-    for k, v in table.items():
-        if label_match(k, object_prompt):
-            return v
-
-    return 0.0
+    return _PRIOR.get_context_weight(target_prompt, object_prompt)
 
 
 # ============================================================

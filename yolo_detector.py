@@ -4,6 +4,19 @@ import numpy as np
 from ultralytics import YOLO
 
 
+# COCO-80 label -> ObjNav prompt aliases (used by YoloCocoDetector to map
+# default COCO names into the wording our prior_backend / grid_agent expect).
+COCO_LABEL_ALIASES = {
+    "couch": "sofa",
+    "remote": "remote control",
+    "cell phone": "phone",
+    "tv": "tv",
+    "potted plant": "house plant",
+    "wine glass": "cup",
+    "cup": "mug",       # YOLO's "cup" most often = mug in living rooms
+}
+
+
 class YoloWorldDetector:
     def __init__(
         self,
@@ -11,12 +24,15 @@ class YoloWorldDetector:
         model_name="yolov8s-world.pt",
         conf=0.12,
         device="cpu",
+        open_vocab=True,
     ):
         self.classes = classes
         self.model = YOLO(model_name)
-        self.model.set_classes(classes)
+        if open_vocab:
+            self.model.set_classes(classes)
         self.conf = conf
         self.device = device
+        self._open_vocab = open_vocab
 
     def detect(self, rgb_image):
         if isinstance(rgb_image, np.ndarray) and rgb_image.ndim == 3:
@@ -41,13 +57,16 @@ class YoloWorldDetector:
 
             for box in r.boxes:
                 cls_id = int(box.cls[0])
-                label = names[cls_id]
+                raw_label = names[cls_id]
+                # remap COCO names to ObjNav prompt vocabulary
+                label = COCO_LABEL_ALIASES.get(raw_label, raw_label)
                 score = float(box.conf[0])
                 x1, y1, x2, y2 = box.xyxy[0].tolist()
 
                 detections.append({
                     "label": label,
                     "score": score,
+                    "raw_label": raw_label,
                     "box": [x1, y1, x2, y2],
                 })
 
